@@ -1,0 +1,139 @@
+@page "/auth/register"
+@inject IAuthService AuthService
+@inject NavigationManager NavigationManager
+
+<PageTitle>Register - Wallet Manager</PageTitle>
+
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0">Create a New Account</h3>
+                </div>
+                <div class="card-body">
+                    <EditForm Model="@registerModel" OnValidSubmit="HandleRegister">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary class="text-danger mb-3" />
+
+                        @if (!string.IsNullOrEmpty(errorMessage))
+                        {
+                            <div class="alert alert-danger">
+                                @errorMessage
+                            </div>
+                        }
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <InputText id="firstName" class="form-control" @bind-Value="registerModel.FirstName" />
+                                <ValidationMessage For="@(() => registerModel.FirstName)" />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <InputText id="lastName" class="form-control" @bind-Value="registerModel.LastName" />
+                                <ValidationMessage For="@(() => registerModel.LastName)" />
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <InputText id="username" class="form-control" @bind-Value="registerModel.UserName" />
+                            <ValidationMessage For="@(() => registerModel.UserName)" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <InputText id="email" class="form-control" @bind-Value="registerModel.Email" type="email" />
+                            <ValidationMessage For="@(() => registerModel.Email)" />
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <InputText id="password" class="form-control" @bind-Value="registerModel.Password" type="password" />
+                                <ValidationMessage For="@(() => registerModel.Password)" />
+                                <small class="form-text text-muted">
+                                    Password must be at least 8 characters and contain uppercase, lowercase, digits, and special characters.
+                                </small>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                <InputText id="confirmPassword" class="form-control" @bind-Value="registerModel.ConfirmPassword" type="password" />
+                                <ValidationMessage For="@(() => registerModel.ConfirmPassword)" />
+                            </div>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary" disabled="@isLoading">
+                                @if (isLoading)
+                                {
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    <span class="ms-1">Processing...</span>
+                                }
+                                else
+                                {
+                                    <span>Register</span>
+                                }
+                            </button>
+                        </div>
+                    </EditForm>
+                </div>
+                <div class="card-footer">
+                    <div class="text-center">
+                        Already have an account? <a href="/auth/login">Login here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private RegisterRequest registerModel = new RegisterRequest();
+    private string? errorMessage;
+    private bool isLoading;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // If user is already logged in, redirect to the dashboard
+        if (await AuthService.IsAuthenticatedAsync())
+        {
+            NavigationManager.NavigateTo("/dashboard");
+        }
+    }
+
+    private async Task HandleRegister()
+    {
+        errorMessage = null;
+        isLoading = true;
+
+        try
+        {
+            var result = await AuthService.RegisterAsync(
+                registerModel.UserName,
+                registerModel.Email,
+                registerModel.Password,
+                registerModel.ConfirmPassword,
+                registerModel.FirstName,
+                registerModel.LastName);
+
+            if (result)
+            {
+                NavigationManager.NavigateTo("/dashboard");
+            }
+            else
+            {
+                errorMessage = "Registration failed. Please check your information and try again.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"An error occurred: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+}

@@ -1,0 +1,156 @@
+@page "/wallets"
+@inject IWalletService WalletService
+@attribute [Authorize]
+
+<PageTitle>My Wallets - Wallet Manager</PageTitle>
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>My Wallets</h1>
+        <a href="/wallets/create" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Create New Wallet
+        </a>
+    </div>
+
+    @if (isLoading)
+    {
+        <LoadingComponent />
+    }
+    else if (wallets == null || !wallets.Any())
+    {
+        <div class="alert alert-info">
+            <h4 class="alert-heading">No wallets found!</h4>
+            <p>You don't have any wallets yet. Click the button below to create your first wallet.</p>
+            <hr>
+            <p class="mb-0">
+                <a href="/wallets/create" class="btn btn-primary">Create Wallet</a>
+            </p>
+        </div>
+    }
+    else
+    {
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var wallet in wallets)
+            {
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">@wallet.Name</h5>
+                            <span class="badge bg-primary">@wallet.Currency</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="@(wallet.Balance >= 0 ? "text-success" : "text-danger")">
+                                @wallet.Balance.ToString("N2") @wallet.Currency
+                            </h3>
+                            <p class="card-text">@wallet.Description</p>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3"></i> Created on @wallet.CreatedAt.ToString("MM/dd/yyyy")
+                                </small>
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    <i class="bi bi-credit-card"></i> @wallet.TransactionCount transactions
+                                </small>
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent d-flex justify-content-between">
+                            <a href="/wallets/@wallet.Id" class="btn btn-outline-primary">
+                                <i class="bi bi-eye"></i> View
+                            </a>
+                            <a href="/wallets/edit/@wallet.Id" class="btn btn-outline-secondary">
+                                <i class="bi bi-pencil"></i> Edit
+                            </a>
+                            <button class="btn btn-outline-danger" @onclick="() => OpenDeleteModal(wallet)">
+                                <i class="bi bi-trash"></i> Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="mt-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Summary</h5>
+                </div>
+                <div class="card-body">
+                    <h3>Total Balance: @totalBalance.ToString("C2")</h3>
+                    <p>Across @wallets.Count wallets</p>
+                </div>
+            </div>
+        </div>
+    }
+
+    @if (walletToDelete != null)
+    {
+        <div class="modal fade show" style="display: block; background-color: rgba(0,0,0,0.5);" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Confirm Delete</h5>
+                        <button type="button" class="btn-close" @onclick="CloseDeleteModal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you want to delete the wallet <strong>@walletToDelete.Name</strong>?</p>
+                        <p class="text-danger">This will also delete all transactions associated with this wallet and cannot be undone.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" @onclick="CloseDeleteModal">Cancel</button>
+                        <button type="button" class="btn btn-danger" @onclick="ConfirmDelete">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private List<WalletDto>? wallets;
+    private decimal totalBalance;
+    private bool isLoading = true;
+    private WalletDto? walletToDelete;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadWallets();
+    }
+
+    private async Task LoadWallets()
+    {
+        isLoading = true;
+        try
+        {
+            wallets = await WalletService.GetAllWalletsAsync();
+            totalBalance = await WalletService.GetTotalBalanceAsync();
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void OpenDeleteModal(WalletDto wallet)
+    {
+        walletToDelete = wallet;
+    }
+
+    private void CloseDeleteModal()
+    {
+        walletToDelete = null;
+    }
+
+    private async Task ConfirmDelete()
+    {
+        if (walletToDelete != null)
+        {
+            bool deleted = await WalletService.DeleteWalletAsync(walletToDelete.Id);
+            if (deleted)
+            {
+                await LoadWallets();
+            }
+            walletToDelete = null;
+        }
+    }
+}

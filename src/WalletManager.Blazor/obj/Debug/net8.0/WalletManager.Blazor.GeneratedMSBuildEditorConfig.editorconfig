@@ -1,0 +1,93 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = WalletManager.Blazor
+build_property.RootNamespace = WalletManager.Blazor
+build_property.ProjectDir = C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Blazor\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Blazor
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/Pages/Auth/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/Pages/Auth/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZWdpc3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/Pages/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/Pages/Transactions/CreateTransaction.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhbnNhY3Rpb25zXENyZWF0ZVRyYW5zYWN0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/Pages/Transactions/EditTransaction.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhbnNhY3Rpb25zXEVkaXRUcmFuc2FjdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/Pages/Transactions/TransactionList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhbnNhY3Rpb25zXFRyYW5zYWN0aW9uTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/Pages/Wallets/CreateWallet.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2FsbGV0c1xDcmVhdGVXYWxsZXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/Pages/Wallets/EditWallet.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2FsbGV0c1xFZGl0V2FsbGV0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/Pages/Wallets/WalletDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2FsbGV0c1xXYWxsZXREZXRhaWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/Pages/Wallets/WalletList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2FsbGV0c1xXYWxsZXRMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/Shared/LoadingComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvYWRpbmdDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/melouadi/Desktop/WalletMaster/WalletMaster/src/WalletManager.Blazor/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

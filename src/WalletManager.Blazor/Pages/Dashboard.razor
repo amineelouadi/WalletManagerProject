@@ -1,0 +1,220 @@
+@page "/dashboard"
+@using System.Drawing
+@inject ITransactionService TransactionService
+@inject IWalletService WalletService
+@attribute [Authorize]
+
+<PageTitle>Dashboard - Wallet Manager</PageTitle>
+
+@if (dashboard == null)
+{
+    <LoadingComponent />
+}
+else
+{
+    <div class="container-fluid">
+        <h1 class="mt-4">Financial Dashboard</h1>
+
+        <div class="row mt-4">
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-primary text-white mb-4">
+                    <div class="card-body">
+                        <h5>Total Balance</h5>
+                        <h2>@dashboard.TotalBalance.ToString("C2")</h2>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <span>Across @dashboard.WalletCount wallets</span>
+                        <a class="small text-white stretched-link" href="/wallets">View Details</a>
+                        <div class="small text-white"><i class="bi bi-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-success text-white mb-4">
+                    <div class="card-body">
+                        <h5>Total Income</h5>
+                        <h2>@dashboard.TotalIncome.ToString("C2")</h2>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <span>This month</span>
+                        <a class="small text-white stretched-link" href="/transactions?type=income">View Details</a>
+                        <div class="small text-white"><i class="bi bi-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-danger text-white mb-4">
+                    <div class="card-body">
+                        <h5>Total Expenses</h5>
+                        <h2>@dashboard.TotalExpense.ToString("C2")</h2>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <span>This month</span>
+                        <a class="small text-white stretched-link" href="/transactions?type=expense">View Details</a>
+                        <div class="small text-white"><i class="bi bi-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="card @(dashboard.NetBalance >= 0 ? "bg-success" : "bg-danger") text-white mb-4">
+                    <div class="card-body">
+                        <h5>Net Balance</h5>
+                        <h2>@dashboard.NetBalance.ToString("C2")</h2>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <span>Income - Expenses</span>
+                        <div class="small text-white"><i class="bi bi-info-circle"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <i class="bi bi-graph-up me-1"></i>
+                        Balance History (Last 30 Days)
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-info">
+                            Chart visualization temporarily disabled.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <i class="bi bi-pie-chart me-1"></i>
+                        Expenses by Category
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-info">
+                            Chart visualization temporarily disabled.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <i class="bi bi-wallet2 me-1"></i>
+                        Your Wallets
+                    </div>
+                    <div class="card-body">
+                        @if (dashboard.Wallets.Count > 0)
+                        {
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Balance</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var wallet in dashboard.Wallets)
+                                        {
+                                            <tr>
+                                                <td>@wallet.Name</td>
+                                                <td>@wallet.Balance.ToString("C2") @wallet.Currency</td>
+                                                <td>
+                                                    <a href="/wallets/@wallet.Id" class="btn btn-sm btn-primary">View</a>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="text-end mt-3">
+                                <a href="/wallets" class="btn btn-primary">Manage Wallets</a>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="alert alert-info">
+                                You don't have any wallets yet.
+                                <a href="/wallets/create" class="alert-link">Create your first wallet</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <i class="bi bi-arrow-left-right me-1"></i>
+                        Recent Transactions
+                    </div>
+                    <div class="card-body">
+                        @if (dashboard.RecentTransactions.Count > 0)
+                        {
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Description</th>
+                                            <th>Amount</th>
+                                            <th>Type</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var transaction in dashboard.RecentTransactions)
+                                        {
+                                            <tr>
+                                                <td>@transaction.TransactionDate.ToString("MM/dd/yyyy")</td>
+                                                <td>@transaction.Description</td>
+                                                <td>@transaction.Amount.ToString("C2")</td>
+                                                <td>
+                                                    <span class="badge @GetBadgeClass(transaction.Type)">
+                                                        @transaction.TransactionTypeName
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="text-end mt-3">
+                                <a href="/transactions" class="btn btn-primary">View All Transactions</a>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="alert alert-info">
+                                No transactions found.
+                                <a href="/transactions/create" class="alert-link">Create your first transaction</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private DashboardDto? dashboard;
+
+    protected override async Task OnInitializedAsync()
+    {
+        dashboard = await TransactionService.GetDashboardDataAsync();
+    }
+
+    private string GetBadgeClass(TransactionType type)
+    {
+        return type switch
+        {
+            TransactionType.Income => "bg-success",
+            TransactionType.Expense => "bg-danger",
+            TransactionType.Transfer => "bg-info",
+            _ => "bg-secondary"
+        };
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Wallet Manager",
+  "short_name": "WalletManager",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#03173d",
+  "icons": [
+    {
+      "src": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/icons/wallet2.svg",
+      "type": "image/svg",
+      "sizes": "512x512"
+    }
+  ]
+}

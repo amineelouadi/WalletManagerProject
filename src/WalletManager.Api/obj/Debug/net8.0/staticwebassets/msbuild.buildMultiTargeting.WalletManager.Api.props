@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WalletManager.Api.props" />
+</Project>

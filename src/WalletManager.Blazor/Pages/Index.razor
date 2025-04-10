@@ -1,0 +1,71 @@
+@page "/"
+@inject NavigationManager NavigationManager
+@inject IAuthService AuthService
+
+<PageTitle>Home - Wallet Manager</PageTitle>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h1 class="display-4">Welcome to Wallet Manager</h1>
+            <p class="lead mt-4">
+                Track your expenses, manage your income, and take control of your financial life with our easy-to-use wallet management system.
+            </p>
+
+            <AuthorizeView>
+                <Authorized>
+                    <div class="mt-5">
+                        <a href="/dashboard" class="btn btn-primary btn-lg px-4 me-3">Go to Dashboard</a>
+                        <a href="/wallets" class="btn btn-outline-primary btn-lg px-4">Manage Wallets</a>
+                    </div>
+                </Authorized>
+                <NotAuthorized>
+                    <div class="mt-5">
+                        <a href="/auth/login" class="btn btn-primary btn-lg px-4 me-3">Login</a>
+                        <a href="/auth/register" class="btn btn-outline-primary btn-lg px-4">Register</a>
+                    </div>
+                </NotAuthorized>
+            </AuthorizeView>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-wallet2 fs-1 text-primary mb-3"></i>
+                    <h3>Multiple Wallets</h3>
+                    <p>Create and manage multiple wallets for different purposes or currencies.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-graph-up fs-1 text-primary mb-3"></i>
+                    <h3>Expense Tracking</h3>
+                    <p>Keep track of all your expenses and income with detailed transaction history.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-pie-chart fs-1 text-primary mb-3"></i>
+                    <h3>Financial Overview</h3>
+                    <p>Get insights into your spending habits with our comprehensive dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        if (await AuthService.IsAuthenticatedAsync())
+        {
+            NavigationManager.NavigateTo("/dashboard");
+        }
+    }
+}

@@ -1,0 +1,5 @@
+C:\Users\melouadi\.nuget\packages\chartjs.blazor.fork\2.0.2\contentFiles\any\netstandard2.1\wwwroot\ChartJsBlazorInterop.js
+wwwroot\css\app.css
+wwwroot\index.html
+wwwroot\js\app.js
+wwwroot\manifest.json

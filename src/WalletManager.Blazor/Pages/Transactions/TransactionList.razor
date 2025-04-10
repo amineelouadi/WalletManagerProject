@@ -1,0 +1,370 @@
+@page "/transactions"
+@page "/transactions/wallet/{WalletId:int}"
+@inject ITransactionService TransactionService
+@inject IWalletService WalletService
+@inject NavigationManager NavigationManager
+@attribute [Authorize]
+
+<PageTitle>Transactions - Wallet Manager</PageTitle>
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Transactions @(wallet != null ? $"- {wallet.Name}" : "")</h1>
+        <div>
+            <button class="btn btn-outline-primary me-2" @onclick="ToggleFilters">
+                <i class="bi bi-funnel"></i> Filter
+            </button>
+            <a href="/transactions/create@(wallet != null ? $"?walletId={wallet.Id}" : "")" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> Add Transaction
+            </a>
+        </div>
+    </div>
+
+    @if (showFilters)
+    {
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">Filters</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label">Transaction Type</label>
+                        <select class="form-select" @bind="filterType">
+                            <option value="-1">All Types</option>
+                            <option value="1">Income</option>
+                            <option value="2">Expense</option>
+                            <option value="3">Transfer</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label">Start Date</label>
+                        <input type="date" class="form-control" @bind="startDate" />
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label">End Date</label>
+                        <input type="date" class="form-control" @bind="endDate" />
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label">Wallet</label>
+                        <select class="form-select" @bind="filterWalletId" disabled="@(wallet != null)">
+                            <option value="0">All Wallets</option>
+                            @if (allWallets != null)
+                            {
+                                @foreach (var w in allWallets)
+                                {
+                                    <option value="@w.Id">@w.Name</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-end">
+                        <button class="btn btn-secondary me-2" @onclick="ResetFilters">Reset</button>
+                        <button class="btn btn-primary" @onclick="ApplyFilters">Apply Filters</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    @if (isLoading)
+    {
+        <LoadingComponent />
+    }
+    else if (filteredTransactions == null || !filteredTransactions.Any())
+    {
+        <div class="alert alert-info">
+            <h4 class="alert-heading">No transactions found!</h4>
+            <p>
+                @if (isFiltered)
+                {
+                    <span>No transactions match your filters. Try different criteria or reset filters.</span>
+                }
+                else
+                {
+                    <span>You don't have any transactions yet. Add your first transaction to get started.</span>
+                }
+            </p>
+            <hr>
+            <p class="mb-0">
+                @if (isFiltered)
+                {
+                    <button class="btn btn-primary me-2" @onclick="ResetFilters">Reset Filters</button>
+                }
+                <a href="/transactions/create@(wallet != null ? $"?walletId={wallet.Id}" : "")" class="btn btn-success">Add Transaction</a>
+            </p>
+        </div>
+    }
+    else
+    {
+        <div class="card shadow">
+            <div class="card-header bg-light">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="mb-0 mt-1">Transaction List</h5>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        @if (isFiltered)
+                        {
+                            <span class="badge bg-info me-2">Filtered Results</span>
+                            <button class="btn btn-sm btn-outline-secondary" @onclick="ResetFilters">Clear Filters</button>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Date</th>
+                                <th>Description</th>
+                                <th>Category</th>
+                                <th>Wallet</th>
+                                <th>Amount</th>
+                                <th>Type</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var transaction in filteredTransactions)
+                            {
+                                <tr>
+                                    <td>@transaction.TransactionDate.ToString("MM/dd/yyyy")</td>
+                                    <td>@transaction.Description</td>
+                                    <td>@(string.IsNullOrEmpty(transaction.Category) ? "-" : transaction.Category)</td>
+                                    <td>
+                                        <a href="/wallets/@transaction.WalletId">@transaction.WalletName</a>
+                                    </td>
+                                    <td class="@(transaction.Type == TransactionType.Income ? "text-success" : "text-danger")">
+                                        @transaction.Amount.ToString("N2")
+                                    </td>
+                                    <td>
+                                        <span class="badge @GetBadgeClass(transaction.Type)">
+                                            @transaction.TransactionTypeName
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="/transactions/edit/@transaction.Id" class="btn btn-outline-primary">
+                                                <i class="bi bi-pencil"></i>
+                                            </a>
+                                            <button class="btn btn-outline-danger" @onclick="() => OpenDeleteModal(transaction)">
+                                                <i class="bi bi-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">Showing @filteredTransactions.Count transactions</p>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <p class="mb-0">
+                            <span class="text-success me-3">Income: @incomeTotal.ToString("C2")</span>
+                            <span class="text-danger">Expenses: @expenseTotal.ToString("C2")</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    @if (transactionToDelete != null)
+    {
+        <div class="modal fade show" style="display: block; background-color: rgba(0,0,0,0.5);" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Confirm Delete</h5>
+                        <button type="button" class="btn-close" @onclick="CloseDeleteModal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you want to delete this transaction?</p>
+                        <p><strong>Description:</strong> @transactionToDelete.Description</p>
+                        <p><strong>Amount:</strong> @transactionToDelete.Amount.ToString("N2")</p>
+                        <p><strong>Date:</strong> @transactionToDelete.TransactionDate.ToString("MM/dd/yyyy")</p>
+                        <p><strong>Wallet:</strong> @transactionToDelete.WalletName</p>
+                        <p class="text-danger">This action cannot be undone.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" @onclick="CloseDeleteModal">Cancel</button>
+                        <button type="button" class="btn btn-danger" @onclick="ConfirmDelete">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public int? WalletId { get; set; }
+
+    private List<TransactionDto>? transactions;
+    private List<TransactionDto> filteredTransactions = new();
+    private List<WalletDto>? allWallets;
+    private WalletDto? wallet;
+
+    private bool isLoading = true;
+    private bool showFilters = false;
+    private bool isFiltered = false;
+    private TransactionDto? transactionToDelete;
+
+    // Filter parameters
+    private int filterType = -1;
+    private DateTime startDate = DateTime.Now.AddMonths(-1);
+    private DateTime endDate = DateTime.Now;
+    private int filterWalletId = 0;
+
+    // Totals
+    private decimal incomeTotal = 0;
+    private decimal expenseTotal = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (WalletId.HasValue)
+        {
+            wallet = await WalletService.GetWalletByIdAsync(WalletId.Value);
+            filterWalletId = WalletId.Value;
+        }
+
+        await LoadAllWallets();
+        await LoadTransactions();
+    }
+
+    private async Task LoadAllWallets()
+    {
+        allWallets = await WalletService.GetAllWalletsAsync();
+    }
+
+    private async Task LoadTransactions()
+    {
+        isLoading = true;
+        try
+        {
+            if (WalletId.HasValue)
+            {
+                transactions = await TransactionService.GetTransactionsByWalletIdAsync(WalletId.Value);
+            }
+            else
+            {
+                transactions = await TransactionService.GetAllTransactionsAsync();
+            }
+
+            FilterTransactions();
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void FilterTransactions()
+    {
+        if (transactions == null) return;
+
+        filteredTransactions = transactions;
+
+        if (filterType >= 0)
+        {
+            filteredTransactions = filteredTransactions
+                .Where(t => (int)t.Type == filterType)
+                .ToList();
+        }
+
+        filteredTransactions = filteredTransactions
+            .Where(t => t.TransactionDate.Date >= startDate.Date && t.TransactionDate.Date <= endDate.Date)
+            .ToList();
+
+        if (filterWalletId > 0)
+        {
+            filteredTransactions = filteredTransactions
+                .Where(t => t.WalletId == filterWalletId)
+                .ToList();
+        }
+
+        // Calculate totals
+        incomeTotal = filteredTransactions
+            .Where(t => t.Type == TransactionType.Income)
+            .Sum(t => t.Amount);
+
+        expenseTotal = filteredTransactions
+            .Where(t => t.Type == TransactionType.Expense)
+            .Sum(t => t.Amount);
+
+        // Determine if filters are applied
+        isFiltered = filterType >= 0 || 
+                    startDate.Date != DateTime.Now.AddMonths(-1).Date || 
+                    endDate.Date != DateTime.Now.Date ||
+                    (filterWalletId > 0 && !WalletId.HasValue);
+    }
+
+    private void ToggleFilters()
+    {
+        showFilters = !showFilters;
+    }
+
+    private void ApplyFilters()
+    {
+        FilterTransactions();
+        showFilters = false;
+    }
+
+    private async Task ResetFilters()
+    {
+        filterType = -1;
+        startDate = DateTime.Now.AddMonths(-1);
+        endDate = DateTime.Now;
+        
+        if (!WalletId.HasValue)
+        {
+            filterWalletId = 0;
+        }
+        
+        await LoadTransactions();
+        showFilters = false;
+    }
+
+    private string GetBadgeClass(TransactionType type)
+    {
+        return type switch
+        {
+            TransactionType.Income => "bg-success",
+            TransactionType.Expense => "bg-danger",
+            TransactionType.Transfer => "bg-info",
+            _ => "bg-secondary"
+        };
+    }
+
+    private void OpenDeleteModal(TransactionDto transaction)
+    {
+        transactionToDelete = transaction;
+    }
+
+    private void CloseDeleteModal()
+    {
+        transactionToDelete = null;
+    }
+
+    private async Task ConfirmDelete()
+    {
+        if (transactionToDelete != null)
+        {
+            bool deleted = await TransactionService.DeleteTransactionAsync(transactionToDelete.Id);
+            if (deleted)
+            {
+                await LoadTransactions();
+            }
+            transactionToDelete = null;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@page "/wallets/create"
+@inject IWalletService WalletService
+@inject NavigationManager NavigationManager
+@attribute [Authorize]
+
+<PageTitle>Create Wallet - Wallet Manager</PageTitle>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0">Create New Wallet</h3>
+                </div>
+                <div class="card-body">
+                    <EditForm Model="@createWalletModel" OnValidSubmit="HandleCreate">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary class="text-danger mb-3" />
+
+                        @if (!string.IsNullOrEmpty(errorMessage))
+                        {
+                            <div class="alert alert-danger">
+                                @errorMessage
+                            </div>
+                        }
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Wallet Name</label>
+                            <InputText id="name" class="form-control" @bind-Value="createWalletModel.Name" />
+                            <ValidationMessage For="@(() => createWalletModel.Name)" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <InputTextArea id="description" class="form-control" @bind-Value="createWalletModel.Description" rows="3" />
+                            <ValidationMessage For="@(() => createWalletModel.Description)" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="initialBalance" class="form-label">Initial Balance</label>
+                            <InputNumber id="initialBalance" class="form-control" @bind-Value="createWalletModel.InitialBalance" />
+                            <ValidationMessage For="@(() => createWalletModel.InitialBalance)" />
+                            <small class="form-text text-muted">
+                                The starting balance for your wallet. If you're creating a wallet for existing funds, enter the current amount.
+                            </small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="currency" class="form-label">Currency</label>
+                            <InputSelect id="currency" class="form-select" @bind-Value="createWalletModel.Currency">
+                                <option value="USD">USD - US Dollar</option>
+                                <option value="EUR">EUR - Euro</option>
+                                <option value="GBP">GBP - British Pound</option>
+                                <option value="JPY">JPY - Japanese Yen</option>
+                                <option value="CAD">CAD - Canadian Dollar</option>
+                                <option value="AUD">AUD - Australian Dollar</option>
+                                <option value="CHF">CHF - Swiss Franc</option>
+                                <option value="CNY">CNY - Chinese Yuan</option>
+                                <option value="INR">INR - Indian Rupee</option>
+                                <option value="BRL">BRL - Brazilian Real</option>
+                            </InputSelect>
+                            <ValidationMessage For="@(() => createWalletModel.Currency)" />
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <a href="/wallets" class="btn btn-outline-secondary">Cancel</a>
+                            <button type="submit" class="btn btn-primary" disabled="@isLoading">
+                                @if (isLoading)
+                                {
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    <span class="ms-1">Creating...</span>
+                                }
+                                else
+                                {
+                                    <span>Create Wallet</span>
+                                }
+                            </button>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private CreateWalletDto createWalletModel = new CreateWalletDto
+    {
+        Currency = "USD",
+        InitialBalance = 0
+    };
+    private string? errorMessage;
+    private bool isLoading;
+
+    private async Task HandleCreate()
+    {
+        errorMessage = null;
+        isLoading = true;
+
+        try
+        {
+            var wallet = await WalletService.CreateWalletAsync(createWalletModel);
+            if (wallet != null)
+            {
+                NavigationManager.NavigateTo($"/wallets/{wallet.Id}");
+            }
+            else
+            {
+                errorMessage = "Failed to create wallet. Please try again.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"An error occurred: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+}

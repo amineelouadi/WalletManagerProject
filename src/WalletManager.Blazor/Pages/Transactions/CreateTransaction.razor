@@ -1,0 +1,186 @@
+@page "/transactions/create"
+@inject ITransactionService TransactionService
+@inject IWalletService WalletService
+@inject NavigationManager NavigationManager
+@attribute [Authorize]
+
+<PageTitle>Add Transaction - Wallet Manager</PageTitle>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0">Add New Transaction</h3>
+                </div>
+                <div class="card-body">
+                    @if (isLoading)
+                    {
+                        <LoadingComponent />
+                    }
+                    else if (wallets == null || !wallets.Any())
+                    {
+                        <div class="alert alert-warning">
+                            <h4 class="alert-heading">No wallets found!</h4>
+                            <p>You need to create a wallet before adding transactions.</p>
+                            <hr>
+                            <p class="mb-0">
+                                <a href="/wallets/create" class="btn btn-primary">Create a Wallet</a>
+                            </p>
+                        </div>
+                    }
+                    else
+                    {
+                        <EditForm Model="@createTransactionModel" OnValidSubmit="HandleCreate">
+                            <DataAnnotationsValidator />
+                            <ValidationSummary class="text-danger mb-3" />
+
+                            @if (!string.IsNullOrEmpty(errorMessage))
+                            {
+                                <div class="alert alert-danger">
+                                    @errorMessage
+                                </div>
+                            }
+
+                            <div class="mb-3">
+                                <label for="walletId" class="form-label">Wallet</label>
+                                <InputSelect id="walletId" class="form-select" @bind-Value="createTransactionModel.WalletId">
+                                    @foreach (var wallet in wallets)
+                                    {
+                                        <option value="@wallet.Id">@wallet.Name (@wallet.Balance @wallet.Currency)</option>
+                                    }
+                                </InputSelect>
+                                <ValidationMessage For="@(() => createTransactionModel.WalletId)" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="type" class="form-label">Transaction Type</label>
+                                <InputSelect id="type" class="form-select" @bind-Value="createTransactionModel.Type">
+                                    <option value="@TransactionType.Income">Income</option>
+                                    <option value="@TransactionType.Expense">Expense</option>
+                                    <option value="@TransactionType.Transfer">Transfer</option>
+                                </InputSelect>
+                                <ValidationMessage For="@(() => createTransactionModel.Type)" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="amount" class="form-label">Amount</label>
+                                <InputNumber id="amount" class="form-control" @bind-Value="createTransactionModel.Amount" />
+                                <ValidationMessage For="@(() => createTransactionModel.Amount)" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="description" class="form-label">Description</label>
+                                <InputText id="description" class="form-control" @bind-Value="createTransactionModel.Description" />
+                                <ValidationMessage For="@(() => createTransactionModel.Description)" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="category" class="form-label">Category (Optional)</label>
+                                <InputText id="category" class="form-control" @bind-Value="createTransactionModel.Category" />
+                                <ValidationMessage For="@(() => createTransactionModel.Category)" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="reference" class="form-label">Reference (Optional)</label>
+                                <InputText id="reference" class="form-control" @bind-Value="createTransactionModel.Reference" />
+                                <ValidationMessage For="@(() => createTransactionModel.Reference)" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="transactionDate" class="form-label">Transaction Date</label>
+                                <InputDate id="transactionDate" class="form-control" @bind-Value="createTransactionModel.TransactionDate" />
+                                <ValidationMessage For="@(() => createTransactionModel.TransactionDate)" />
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <a href="/transactions" class="btn btn-outline-secondary">Cancel</a>
+                                <button type="submit" class="btn btn-primary" disabled="@isSaving">
+                                    @if (isSaving)
+                                    {
+                                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                        <span class="ms-1">Saving...</span>
+                                    }
+                                    else
+                                    {
+                                        <span>Add Transaction</span>
+                                    }
+                                </button>
+                            </div>
+                        </EditForm>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private CreateTransactionDto createTransactionModel = new CreateTransactionDto
+    {
+        TransactionDate = DateTime.Now,
+        Type = TransactionType.Expense
+    };
+    private List<WalletDto>? wallets;
+    private string? errorMessage;
+    private bool isLoading = true;
+    private bool isSaving = false;
+
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "walletId")]
+    public int? WalletId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadWallets();
+        
+        if (WalletId.HasValue && wallets != null && wallets.Any(w => w.Id == WalletId.Value))
+        {
+            createTransactionModel.WalletId = WalletId.Value;
+        }
+        else if (wallets != null && wallets.Any())
+        {
+            createTransactionModel.WalletId = wallets.First().Id;
+        }
+    }
+
+    private async Task LoadWallets()
+    {
+        isLoading = true;
+        try
+        {
+            wallets = await WalletService.GetAllWalletsAsync();
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task HandleCreate()
+    {
+        errorMessage = null;
+        isSaving = true;
+
+        try
+        {
+            var transaction = await TransactionService.CreateTransactionAsync(createTransactionModel);
+            if (transaction != null)
+            {
+                NavigationManager.NavigateTo($"/wallets/{transaction.WalletId}");
+            }
+            else
+            {
+                errorMessage = "Failed to create transaction. Please try again.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"An error occurred: {ex.Message}";
+        }
+        finally
+        {
+            isSaving = false;
+        }
+    }
+}

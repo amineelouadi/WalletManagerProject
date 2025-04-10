@@ -1,0 +1,276 @@
+@page "/wallets/{Id:int}"
+@inject IWalletService WalletService
+@inject ITransactionService TransactionService
+@inject NavigationManager NavigationManager
+@attribute [Authorize]
+
+<PageTitle>Wallet Details - Wallet Manager</PageTitle>
+
+@if (isLoading)
+{
+    <LoadingComponent />
+}
+else if (wallet == null)
+{
+    <div class="alert alert-danger">
+        <h4 class="alert-heading">Wallet not found!</h4>
+        <p>The wallet you're trying to view doesn't exist or you don't have access to it.</p>
+        <hr>
+        <p class="mb-0">
+            <a href="/wallets" class="btn btn-primary">Back to Wallets</a>
+        </p>
+    </div>
+}
+else
+{
+    <div class="container mt-4">
+        <div class="row mb-4">
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/wallets">Wallets</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">@wallet.Name</li>
+                    </ol>
+                </nav>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1>@wallet.Name</h1>
+                    <div>
+                        <a href="/wallets/edit/@wallet.Id" class="btn btn-primary me-2">Edit Wallet</a>
+                        <a href="/transactions/create?walletId=@wallet.Id" class="btn btn-success">Add Transaction</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Wallet Details</h5>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="@(wallet.Balance >= 0 ? "text-success" : "text-danger") mb-3">
+                            @wallet.Balance.ToString("N2") @wallet.Currency
+                        </h2>
+                        <p><strong>Description:</strong> @wallet.Description</p>
+                        <p><strong>Currency:</strong> @wallet.Currency</p>
+                        <p><strong>Created:</strong> @wallet.CreatedAt.ToString("MM/dd/yyyy")</p>
+                        <p><strong>Last Updated:</strong> @wallet.UpdatedAt.ToString("MM/dd/yyyy")</p>
+                        <p><strong>Transactions:</strong> @wallet.TransactionCount</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Transactions</h5>
+                        <div class="btn-group">
+                            <button class="btn btn-sm @(activeTab == "all" ? "btn-primary" : "btn-outline-primary")" @onclick="@(() => ChangeTabAll())">All</button>
+                            <button class="btn btn-sm @(activeTab == "income" ? "btn-primary" : "btn-outline-primary")" @onclick="@(() => ChangeTabIncome())">Income</button>
+                            <button class="btn btn-sm @(activeTab == "expense" ? "btn-primary" : "btn-outline-primary")" @onclick="@(() => ChangeTabExpense())">Expense</button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        @if (isLoadingTransactions)
+                        {
+                            <LoadingComponent />
+                        }
+                        else if (transactions == null || !transactions.Any())
+                        {
+                            <div class="alert alert-info">
+                                <p>No transactions found. Add your first transaction to get started.</p>
+                                <a href="/transactions/create?walletId=@wallet.Id" class="btn btn-primary">Add Transaction</a>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Description</th>
+                                            <th>Category</th>
+                                            <th>Amount</th>
+                                            <th>Type</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var transaction in filteredTransactions)
+                                        {
+                                            <tr>
+                                                <td>@transaction.TransactionDate.ToString("MM/dd/yyyy")</td>
+                                                <td>@transaction.Description</td>
+                                                <td>@(string.IsNullOrEmpty(transaction.Category) ? "-" : transaction.Category)</td>
+                                                <td class="@(transaction.Type == TransactionType.Income ? "text-success" : "text-danger")">
+                                                    @transaction.Amount.ToString("N2") @wallet.Currency
+                                                </td>
+                                                <td>
+                                                    <span class="badge @GetBadgeClass(transaction.Type)">
+                                                        @transaction.TransactionTypeName
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <a href="/transactions/edit/@transaction.Id" class="btn btn-sm btn-outline-primary">
+                                                            <i class="bi bi-pencil"></i>
+                                                        </a>
+                                                        <button class="btn btn-sm btn-outline-danger" @onclick="() => OpenDeleteModal(transaction)">
+                                                            <i class="bi bi-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (transactionToDelete != null)
+    {
+        <div class="modal fade show" style="display: block; background-color: rgba(0,0,0,0.5);" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Confirm Delete</h5>
+                        <button type="button" class="btn-close" @onclick="CloseDeleteModal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you want to delete this transaction?</p>
+                        <p><strong>Description:</strong> @transactionToDelete.Description</p>
+                        <p><strong>Amount:</strong> @transactionToDelete.Amount.ToString("N2") @wallet.Currency</p>
+                        <p><strong>Date:</strong> @transactionToDelete.TransactionDate.ToString("MM/dd/yyyy")</p>
+                        <p class="text-danger">This action cannot be undone.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" @onclick="CloseDeleteModal">Cancel</button>
+                        <button type="button" class="btn btn-danger" @onclick="ConfirmDelete">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private WalletDto? wallet;
+    private List<TransactionDto>? transactions;
+    private List<TransactionDto> filteredTransactions = new();
+    private bool isLoading = true;
+    private bool isLoadingTransactions = true;
+    private string activeTab = "all";
+    private TransactionDto? transactionToDelete;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadWallet();
+    }
+
+    private async Task LoadWallet()
+    {
+        isLoading = true;
+        try
+        {
+            wallet = await WalletService.GetWalletByIdAsync(Id);
+            if (wallet != null)
+            {
+                await LoadTransactions();
+            }
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task LoadTransactions()
+    {
+        isLoadingTransactions = true;
+        try
+        {
+            transactions = await TransactionService.GetTransactionsByWalletIdAsync(Id);
+            FilterTransactions();
+        }
+        finally
+        {
+            isLoadingTransactions = false;
+        }
+    }
+
+    private void ChangeTab(string tab)
+    {
+        activeTab = tab;
+        FilterTransactions();
+    }
+    
+    private void ChangeTabAll()
+    {
+        ChangeTab("all");
+    }
+    
+    private void ChangeTabIncome()
+    {
+        ChangeTab("income");
+    }
+    
+    private void ChangeTabExpense()
+    {
+        ChangeTab("expense");
+    }
+
+    private void FilterTransactions()
+    {
+        if (transactions == null) return;
+
+        filteredTransactions = activeTab switch
+        {
+            "income" => transactions.Where(t => t.Type == TransactionType.Income).ToList(),
+            "expense" => transactions.Where(t => t.Type == TransactionType.Expense).ToList(),
+            _ => transactions.ToList()
+        };
+    }
+
+    private string GetBadgeClass(TransactionType type)
+    {
+        return type switch
+        {
+            TransactionType.Income => "bg-success",
+            TransactionType.Expense => "bg-danger",
+            TransactionType.Transfer => "bg-info",
+            _ => "bg-secondary"
+        };
+    }
+
+    private void OpenDeleteModal(TransactionDto transaction)
+    {
+        transactionToDelete = transaction;
+    }
+
+    private void CloseDeleteModal()
+    {
+        transactionToDelete = null;
+    }
+
+    private async Task ConfirmDelete()
+    {
+        if (transactionToDelete != null)
+        {
+            bool deleted = await TransactionService.DeleteTransactionAsync(transactionToDelete.Id);
+            if (deleted)
+            {
+                await LoadWallet();
+            }
+            transactionToDelete = null;
+        }
+    }
+}
