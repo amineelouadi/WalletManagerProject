@@ -30,10 +30,10 @@ C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Infrastruc
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Infrastructure\obj\Debug\net8.0\WalletManager.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Infrastructure\obj\Debug\net8.0\WalletManager.Infrastructure.AssemblyInfo.cs
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Infrastructure\obj\Debug\net8.0\WalletManager.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Infrastructure\obj\Debug\net8.0\WalletManager.Infrastructure.sourcelink.json
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Infrastructure\obj\Debug\net8.0\WalletMa.BEC17114.Up2Date
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Infrastructure\obj\Debug\net8.0\WalletManager.Infrastructure.dll
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Infrastructure\obj\Debug\net8.0\refint\WalletManager.Infrastructure.dll
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Infrastructure\obj\Debug\net8.0\WalletManager.Infrastructure.pdb
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Infrastructure\obj\Debug\net8.0\WalletManager.Infrastructure.genruntimeconfig.cache
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Infrastructure\obj\Debug\net8.0\ref\WalletManager.Infrastructure.dll
-C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Infrastructure\obj\Debug\net8.0\WalletManager.Infrastructure.sourcelink.json

@@ -295,6 +295,7 @@ C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Api\obj\De
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Api\obj\Debug\net8.0\WalletManager.Api.csproj.CoreCompileInputs.cache
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Api\obj\Debug\net8.0\WalletManager.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Api\obj\Debug\net8.0\WalletManager.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Api\obj\Debug\net8.0\WalletManager.Api.sourcelink.json
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Api\obj\Debug\net8.0\scopedcss\bundle\WalletManager.Api.styles.css
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Api\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Api\obj\Debug\net8.0\staticwebassets.development.json
@@ -311,5 +312,3 @@ C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Api\obj\De
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Api\obj\Debug\net8.0\WalletManager.Api.pdb
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Api\obj\Debug\net8.0\WalletManager.Api.genruntimeconfig.cache
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Api\obj\Debug\net8.0\ref\WalletManager.Api.dll
-C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Api\obj\Debug\net8.0\WalletManager.Api.sourcelink.json

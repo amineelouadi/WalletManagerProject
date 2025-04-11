@@ -23,9 +23,9 @@ C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Applicatio
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Application\obj\Debug\net8.0\WalletManager.Application.AssemblyInfoInputs.cache
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Application\obj\Debug\net8.0\WalletManager.Application.AssemblyInfo.cs
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Application\obj\Debug\net8.0\WalletManager.Application.csproj.CoreCompileInputs.cache
+C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Application\obj\Debug\net8.0\WalletManager.Application.sourcelink.json
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Application\obj\Debug\net8.0\WalletMa.AA8FDCA2.Up2Date
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Application\obj\Debug\net8.0\WalletManager.Application.dll
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Application\obj\Debug\net8.0\refint\WalletManager.Application.dll
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Application\obj\Debug\net8.0\WalletManager.Application.pdb
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Application\obj\Debug\net8.0\ref\WalletManager.Application.dll
-C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Application\obj\Debug\net8.0\WalletManager.Application.sourcelink.json

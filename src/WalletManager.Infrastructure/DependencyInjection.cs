@@ -58,7 +58,8 @@ namespace WalletManager.Infrastructure
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(secretKey),
                     ValidateLifetime = true,
-                    ClockSkew = TimeSpan.Zero
+                    ClockSkew = TimeSpan.Zero,
+                    RoleClaimType = "role"
                 };
             });
 

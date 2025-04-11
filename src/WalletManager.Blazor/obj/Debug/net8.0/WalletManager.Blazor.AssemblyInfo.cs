@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WalletManager.Blazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+069b339ea557ae9b95d540f06707e5bf098bbe1d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e1962f6b4b2f5a8e63f64a7eef774460fa5e6df")]
 [assembly: System.Reflection.AssemblyProductAttribute("WalletManager.Blazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WalletManager.Blazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

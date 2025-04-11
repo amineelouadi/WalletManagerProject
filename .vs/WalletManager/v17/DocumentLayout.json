@@ -3,56 +3,83 @@
   "WorkspaceRootPath": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|solutionrelative:src\\walletmanager.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\services\\httpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\services\\httpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|solutionrelative:src\\walletmanager.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E0A39D9-94B0-4EAD-8A2E-2D7D36768C3C}|src\\WalletManager.Infrastructure\\WalletManager.Infrastructure.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E0A39D9-94B0-4EAD-8A2E-2D7D36768C3C}|src\\WalletManager.Infrastructure\\WalletManager.Infrastructure.csproj|solutionrelative:src\\walletmanager.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|solutionrelative:src\\walletmanager.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.api\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|solutionrelative:src\\walletmanager.api\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A5D0B8A-8A97-4F0C-B4AD-14C9CE91B94F}|src\\WalletManager.Application\\WalletManager.Application.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.application\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A5D0B8A-8A97-4F0C-B4AD-14C9CE91B94F}|src\\WalletManager.Application\\WalletManager.Application.csproj|solutionrelative:src\\walletmanager.application\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\services\\walletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\services\\walletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\pages\\transactions\\edittransaction.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\pages\\transactions\\edittransaction.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\pages\\transactions\\transactionlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\pages\\transactions\\transactionlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\services\\interfaces\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\services\\interfaces\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\models\\transactionmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\models\\transactionmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.api\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|solutionrelative:src\\walletmanager.api\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|solutionrelative:src\\walletmanager.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\services\\walletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\services\\walletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\services\\httpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\services\\httpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\pages\\wallets\\walletlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\pages\\wallets\\walletlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\.nuget\\packages\\chartjs.blazor.fork\\2.0.2\\contentfiles\\any\\netstandard2.1\\wwwroot\\chartjsblazorinterop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A5D0B8A-8A97-4F0C-B4AD-14C9CE91B94F}|src\\WalletManager.Application\\WalletManager.Application.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.application\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A5D0B8A-8A97-4F0C-B4AD-14C9CE91B94F}|src\\WalletManager.Application\\WalletManager.Application.csproj|solutionrelative:src\\walletmanager.application\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A5D0B8A-8A97-4F0C-B4AD-14C9CE91B94F}|src\\WalletManager.Application\\WalletManager.Application.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.application\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A5D0B8A-8A97-4F0C-B4AD-14C9CE91B94F}|src\\WalletManager.Application\\WalletManager.Application.csproj|solutionrelative:src\\walletmanager.application\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|solutionrelative:src\\walletmanager.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A5D0B8A-8A97-4F0C-B4AD-14C9CE91B94F}|src\\WalletManager.Application\\WalletManager.Application.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.application\\dtos\\transactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,10 +102,6 @@
       "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\models\\transactionmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\models\\transactionmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\services\\customauthstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\services\\customauthstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -91,20 +114,12 @@
       "RelativeMoniker": "D:0:0:{7A5D0B8A-8A97-4F0C-B4AD-14C9CE91B94F}|src\\WalletManager.Application\\WalletManager.Application.csproj|solutionrelative:src\\walletmanager.application\\dtos\\walletdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\pages\\wallets\\walletlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\pages\\wallets\\walletlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.api\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|solutionrelative:src\\walletmanager.api\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\pages\\auth\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\pages\\auth\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.blazor\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C4D4BD3C-AE5E-4DF1-9EF1-A45B3A30ABDD}|src\\WalletManager.Blazor\\WalletManager.Blazor.csproj|solutionrelative:src\\walletmanager.blazor\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CB7958F-3487-4E7C-A531-44680E0AC526}|src\\WalletManager.Api\\WalletManager.Api.csproj|c:\\users\\melouadi\\desktop\\walletmaster\\walletmaster\\src\\walletmanager.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -150,41 +165,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\AuthService.cs",
-              "RelativeToolTip": "src\\WalletManager.Blazor\\Services\\AuthService.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAcwGwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T22:53:23.761Z",
+              "DocumentIndex": 1,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "src\\WalletManager.Blazor\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-11T12:42:41.609Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TransactionsController.cs",
-              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Api\\Controllers\\TransactionsController.cs",
-              "RelativeDocumentMoniker": "src\\WalletManager.Api\\Controllers\\TransactionsController.cs",
-              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Api\\Controllers\\TransactionsController.cs",
-              "RelativeToolTip": "src\\WalletManager.Api\\Controllers\\TransactionsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\WalletManager.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "src\\WalletManager.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T23:36:54.906Z",
+              "WhenOpened": "2025-04-11T12:38:00.919Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Api\\Program.cs",
-              "RelativeDocumentMoniker": "src\\WalletManager.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Api\\Program.cs",
-              "RelativeToolTip": "src\\WalletManager.Api\\Program.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAowEsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "TransactionModels.cs",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Models\\TransactionModels.cs",
+              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Models\\TransactionModels.cs",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Models\\TransactionModels.cs",
+              "RelativeToolTip": "src\\WalletManager.Blazor\\Models\\TransactionModels.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBMAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T22:07:21.21Z",
+              "WhenOpened": "2025-04-11T00:38:25.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\TransactionService.cs",
+              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Services\\TransactionService.cs",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\TransactionService.cs",
+              "RelativeToolTip": "src\\WalletManager.Blazor\\Services\\TransactionService.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAiwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T22:56:07.024Z",
               "EditorCaption": ""
             },
             {
@@ -195,40 +223,193 @@
               "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Pages\\Dashboard.razor",
               "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Pages\\Dashboard.razor",
               "RelativeToolTip": "src\\WalletManager.Blazor\\Pages\\Dashboard.razor",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAADAAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAM4AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-10T22:38:18.471Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HttpClientService.cs",
-              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\HttpClientService.cs",
-              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Services\\HttpClientService.cs",
-              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\HttpClientService.cs",
-              "RelativeToolTip": "src\\WalletManager.Blazor\\Services\\HttpClientService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T22:56:00.126Z",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\wwwroot\\index.html",
+              "RelativeToolTip": "src\\WalletManager.Blazor\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-10T22:40:46.815Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "TransactionList.razor",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Pages\\Transactions\\TransactionList.razor",
+              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Pages\\Transactions\\TransactionList.razor",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Pages\\Transactions\\TransactionList.razor",
+              "RelativeToolTip": "src\\WalletManager.Blazor\\Pages\\Transactions\\TransactionList.razor",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAqwPMAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T00:41:26.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditTransaction.razor",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Pages\\Transactions\\EditTransaction.razor",
+              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Pages\\Transactions\\EditTransaction.razor",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Pages\\Transactions\\EditTransaction.razor",
+              "RelativeToolTip": "src\\WalletManager.Blazor\\Pages\\Transactions\\EditTransaction.razor",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAH0AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T09:33:53.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Program.cs",
+              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Program.cs",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Program.cs",
+              "RelativeToolTip": "src\\WalletManager.Blazor\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T22:36:39.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\WalletManager.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Api\\Program.cs",
+              "RelativeToolTip": "src\\WalletManager.Api\\Program.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGcAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T22:07:21.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Api\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "src\\WalletManager.Api\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Api\\Controllers\\AuthController.cs",
               "RelativeToolTip": "src\\WalletManager.Api\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAwwJIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T23:36:13.633Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
+              "Title": "TransactionsController.cs",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Api\\Controllers\\TransactionsController.cs",
+              "RelativeDocumentMoniker": "src\\WalletManager.Api\\Controllers\\TransactionsController.cs",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Api\\Controllers\\TransactionsController.cs",
+              "RelativeToolTip": "src\\WalletManager.Api\\Controllers\\TransactionsController.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAiwJoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T23:36:54.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WalletService.cs",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\WalletService.cs",
+              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Services\\WalletService.cs",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\WalletService.cs",
+              "RelativeToolTip": "src\\WalletManager.Blazor\\Services\\WalletService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T22:56:50.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HttpClientService.cs",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\HttpClientService.cs",
+              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Services\\HttpClientService.cs",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\HttpClientService.cs",
+              "RelativeToolTip": "src\\WalletManager.Blazor\\Services\\HttpClientService.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAkwIgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T22:56:00.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WalletList.razor",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Pages\\Wallets\\WalletList.razor",
+              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Pages\\Wallets\\WalletList.razor",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Pages\\Wallets\\WalletList.razor",
+              "RelativeToolTip": "src\\WalletManager.Blazor\\Pages\\Wallets\\WalletList.razor",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T00:11:14.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ChartJsBlazorInterop.js",
+              "DocumentMoniker": "C:\\Users\\melouadi\\.nuget\\packages\\chartjs.blazor.fork\\2.0.2\\contentFiles\\any\\netstandard2.1\\wwwroot\\ChartJsBlazorInterop.js",
+              "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\chartjs.blazor.fork\\2.0.2\\contentFiles\\any\\netstandard2.1\\wwwroot\\ChartJsBlazorInterop.js",
+              "ToolTip": "C:\\Users\\melouadi\\.nuget\\packages\\chartjs.blazor.fork\\2.0.2\\contentFiles\\any\\netstandard2.1\\wwwroot\\ChartJsBlazorInterop.js [Lecture seule]",
+              "RelativeToolTip": "..\\..\\..\\.nuget\\packages\\chartjs.blazor.fork\\2.0.2\\contentFiles\\any\\netstandard2.1\\wwwroot\\ChartJsBlazorInterop.js [Lecture seule]",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAQwAAAAAAAAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-11T11:04:53.274Z",
+              "EditorCaption": " [Lecture seule]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Application\\Services\\TransactionService.cs",
+              "RelativeDocumentMoniker": "src\\WalletManager.Application\\Services\\TransactionService.cs",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Application\\Services\\TransactionService.cs",
+              "RelativeToolTip": "src\\WalletManager.Application\\Services\\TransactionService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T01:08:02.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Application\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "src\\WalletManager.Application\\Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Application\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "src\\WalletManager.Application\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T09:19:06.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\AuthService.cs",
+              "RelativeToolTip": "src\\WalletManager.Blazor\\Services\\AuthService.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAcwGwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T22:53:23.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Api\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "src\\WalletManager.Api\\Controllers\\DashboardController.cs",
@@ -236,72 +417,11 @@
               "RelativeToolTip": "src\\WalletManager.Api\\Controllers\\DashboardController.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAYwBMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T23:35:04.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T23:35:04.877Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TransactionService.cs",
-              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Application\\Services\\TransactionService.cs",
-              "RelativeDocumentMoniker": "src\\WalletManager.Application\\Services\\TransactionService.cs",
-              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Application\\Services\\TransactionService.cs",
-              "RelativeToolTip": "src\\WalletManager.Application\\Services\\TransactionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T01:08:02.23Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Program.cs",
-              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Program.cs",
-              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Program.cs",
-              "RelativeToolTip": "src\\WalletManager.Blazor\\Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T22:36:39.858Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "WalletService.cs",
-              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\WalletService.cs",
-              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Services\\WalletService.cs",
-              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\WalletService.cs",
-              "RelativeToolTip": "src\\WalletManager.Blazor\\Services\\WalletService.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCsAAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T22:56:50.709Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TransactionList.razor",
-              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Pages\\Transactions\\TransactionList.razor",
-              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Pages\\Transactions\\TransactionList.razor",
-              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Pages\\Transactions\\TransactionList.razor",
-              "RelativeToolTip": "src\\WalletManager.Blazor\\Pages\\Transactions\\TransactionList.razor",
-              "ViewState": "AgIAAPoAAAAAAAAAAAD4v/gAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T00:41:26.228Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TransactionService.cs",
-              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\TransactionService.cs",
-              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Services\\TransactionService.cs",
-              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\TransactionService.cs",
-              "RelativeToolTip": "src\\WalletManager.Blazor\\Services\\TransactionService.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAIwDkAAAB8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T22:56:07.024Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Shared\\NavMenu.razor",
               "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Shared\\NavMenu.razor",
@@ -313,19 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ITransactionService.cs",
-              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\Interfaces\\ITransactionService.cs",
-              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Services\\Interfaces\\ITransactionService.cs",
-              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\Interfaces\\ITransactionService.cs",
-              "RelativeToolTip": "src\\WalletManager.Blazor\\Services\\Interfaces\\ITransactionService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAcwBIAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T01:21:21.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "RedirectToLogin.razor",
               "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Shared\\RedirectToLogin.razor",
               "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Shared\\RedirectToLogin.razor",
@@ -337,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "Index.razor",
               "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Pages\\Index.razor",
               "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Pages\\Index.razor",
@@ -349,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "TransactionDto.cs",
               "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Application\\DTOs\\TransactionDto.cs",
               "RelativeDocumentMoniker": "src\\WalletManager.Application\\DTOs\\TransactionDto.cs",
@@ -361,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "CustomAuthStateProvider.cs",
               "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Services\\CustomAuthStateProvider.cs",
               "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Services\\CustomAuthStateProvider.cs",
@@ -373,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\App.razor",
               "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\App.razor",
@@ -386,19 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "TransactionModels.cs",
-              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Models\\TransactionModels.cs",
-              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Models\\TransactionModels.cs",
-              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Models\\TransactionModels.cs",
-              "RelativeToolTip": "src\\WalletManager.Blazor\\Models\\TransactionModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T00:38:25.101Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "WalletsController.cs",
               "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Api\\Controllers\\WalletsController.cs",
               "RelativeDocumentMoniker": "src\\WalletManager.Api\\Controllers\\WalletsController.cs",
@@ -410,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "WalletDto.cs",
               "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Application\\DTOs\\WalletDto.cs",
               "RelativeDocumentMoniker": "src\\WalletManager.Application\\DTOs\\WalletDto.cs",
@@ -422,19 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "WalletList.razor",
-              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Pages\\Wallets\\WalletList.razor",
-              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Pages\\Wallets\\WalletList.razor",
-              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Pages\\Wallets\\WalletList.razor",
-              "RelativeToolTip": "src\\WalletManager.Blazor\\Pages\\Wallets\\WalletList.razor",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T00:11:14.394Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "TestController.cs",
               "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Api\\Controllers\\TestController.cs",
               "RelativeDocumentMoniker": "src\\WalletManager.Api\\Controllers\\TestController.cs",
@@ -446,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "Login.razor",
               "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\Pages\\Auth\\Login.razor",
               "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\Pages\\Auth\\Login.razor",
@@ -458,19 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "src\\WalletManager.Blazor\\wwwroot\\index.html",
-              "ToolTip": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\wwwroot\\index.html",
-              "RelativeToolTip": "src\\WalletManager.Blazor\\wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-04-10T22:40:46.815Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "src\\WalletManager.Api\\Properties\\launchSettings.json",
@@ -482,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "20250410220714_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Infrastructure\\Migrations\\20250410220714_InitialCreate.cs",
               "RelativeDocumentMoniker": "src\\WalletManager.Infrastructure\\Migrations\\20250410220714_InitialCreate.cs",
@@ -494,7 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Api\\appsettings.json",
               "RelativeDocumentMoniker": "src\\WalletManager.Api\\appsettings.json",

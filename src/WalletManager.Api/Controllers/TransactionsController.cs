@@ -117,6 +117,7 @@ namespace WalletManager.Api.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateTransaction(int id, UpdateTransactionDto updateTransactionDto)
         {
@@ -134,7 +135,7 @@ namespace WalletManager.Api.Controllers
             var transaction = await _transactionService.UpdateTransactionAsync(id, updateTransactionDto, userId);
             return transaction == null ? NotFound() : Ok(transaction);
         }
-
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTransaction(int id)
         {

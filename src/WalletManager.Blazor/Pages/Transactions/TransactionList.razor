@@ -1,9 +1,11 @@
 @page "/transactions"
 @page "/transactions/wallet/{WalletId:int}"
+@using System.Security.Claims
 @inject ITransactionService TransactionService
 @inject IWalletService WalletService
 @inject NavigationManager NavigationManager
 @attribute [Authorize]
+@inject AuthenticationStateProvider AuthenticationStateProvider
 
 <PageTitle>Transactions - Wallet Manager</PageTitle>
 
@@ -148,12 +150,15 @@
                                     </td>
                                     <td>
                                         <div class="btn-group btn-group-sm">
-                                            <a href="/transactions/edit/@transaction.Id" class="btn btn-outline-primary">
-                                                <i class="bi bi-pencil"></i>
-                                            </a>
-                                            <button class="btn btn-outline-danger" @onclick="() => OpenDeleteModal(transaction)">
-                                                <i class="bi bi-trash"></i>
-                                            </button>
+                                            @if (userRole == "Admin") // Only show buttons for Admins
+                                            {
+                                                <a href="/transactions/edit/@transaction.Id" class="btn btn-outline-primary">
+                                                    <i class="bi bi-pencil"></i>
+                                                </a>
+                                                <button class="btn btn-outline-danger" @onclick="() => OpenDeleteModal(transaction)">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            }
                                         </div>
                                     </td>
                                 </tr>
@@ -206,6 +211,7 @@
 </div>
 
 @code {
+
     [Parameter]
     public int? WalletId { get; set; }
 
@@ -229,16 +235,40 @@
     private decimal incomeTotal = 0;
     private decimal expenseTotal = 0;
 
+    private string userRole = string.Empty;
+
     protected override async Task OnInitializedAsync()
     {
-        if (WalletId.HasValue)
-        {
-            wallet = await WalletService.GetWalletByIdAsync(WalletId.Value);
-            filterWalletId = WalletId.Value;
-        }
 
-        await LoadAllWallets();
-        await LoadTransactions();
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        userRole = authState.User.FindFirst("role")?.Value ?? "User";
+        try
+        {
+            if (WalletId.HasValue)
+            {
+                wallet = await WalletService.GetWalletByIdAsync(WalletId.Value);
+                if (wallet == null)
+                {
+                    Console.WriteLine($"Wallet with ID {WalletId.Value} not found");
+                    NavigationManager.NavigateTo("/wallets");
+                    return;
+                }
+                filterWalletId = WalletId.Value;
+            }
+
+            await LoadAllWallets();
+            await LoadTransactions();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in OnInitializedAsync: {ex.Message}");
+            // Handle authentication errors - redirect to login if needed
+            if (ex.Message.Contains("401") || ex.Message.Contains("Unauthorized"))
+            {
+                Console.WriteLine("Authentication error detected - redirecting to login");
+                NavigationManager.NavigateTo("/login");
+            }
+        }
     }
 
     private async Task LoadAllWallets()
@@ -253,18 +283,22 @@
         {
             if (WalletId.HasValue)
             {
+                Console.WriteLine($"Loading transactions for wallet ID: {WalletId.Value}");
                 transactions = await TransactionService.GetTransactionsByWalletIdAsync(WalletId.Value);
             }
             else
             {
+                Console.WriteLine("Loading all transactions");
                 transactions = await TransactionService.GetAllTransactionsAsync();
+            }
 
-                // Debug output
-                Console.WriteLine($"Fetched {transactions?.Count} transactions");
-                if (transactions == null)
-                {
-                    Console.WriteLine("Transactions list is null");
-                }
+            Console.WriteLine($"Fetched {transactions?.Count ?? 0} transactions");
+
+            Console.WriteLine($"The Transaction OBJECT  {transactions.ToString()} ");
+            if (transactions == null)
+            {
+                Console.WriteLine("Transactions list is null");
+                transactions = new List<TransactionDto>();
             }
 
             FilterTransactions();
@@ -272,6 +306,11 @@
         catch (Exception ex)
         {
             Console.WriteLine($"Error loading transactions: {ex}");
+            // Handle potential authentication errors
+            if (ex.Message.Contains("401") || ex.Message.Contains("Unauthorized"))
+            {
+                NavigationManager.NavigateTo("/login");
+            }
         }
         finally
         {

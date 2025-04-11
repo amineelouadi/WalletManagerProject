@@ -1,6 +1,8 @@
 @page "/transactions/edit/{Id:int}"
+@using System.Security.Claims
 @inject ITransactionService TransactionService
 @inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthenticationStateProvider
 @attribute [Authorize]
 
 <PageTitle>Edit Transaction - Wallet Manager</PageTitle>
@@ -119,7 +121,17 @@
 
     protected override async Task OnInitializedAsync()
     {
-        await LoadTransaction();
+        // Check user role
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var role = authState.User.FindFirst("role")?.Value;
+
+        if (role != "Admin")
+        {
+            NavigationManager.NavigateTo("/access-denied"); // Redirect non-admins
+            return;
+        }
+
+        await LoadTransaction(); // Proceed only for Admins
     }
 
     private async Task LoadTransaction()

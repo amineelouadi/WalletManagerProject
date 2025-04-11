@@ -37,12 +37,28 @@ namespace WalletManager.Blazor.Services
 
         public async Task<TransactionDto?> UpdateTransactionAsync(int id, UpdateTransactionDto transaction)
         {
-            return await _httpClient.PutAsync<TransactionDto>($"api/transactions/{id}", transaction);
+            try
+            {
+                return await _httpClient.PutAsync<TransactionDto>($"api/transactions/{id}", transaction);
+            }
+            catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.Forbidden)
+            {
+                Console.WriteLine("Access denied: You are not authorized to update transactions.");
+                return null;
+            }
         }
 
         public async Task<bool> DeleteTransactionAsync(int id)
         {
-            return await _httpClient.DeleteAsync($"api/transactions/{id}");
+            try
+            {
+                return await _httpClient.DeleteAsync($"api/transactions/{id}");
+            }
+            catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.Forbidden)
+            {
+                Console.WriteLine("Access denied: You are not authorized to delete transactions.");
+                return false;
+            }
         }
 
         public async Task<List<TransactionDto>> GetTransactionsByDateRangeAsync(DateTime startDate, DateTime endDate)
@@ -63,7 +79,7 @@ namespace WalletManager.Blazor.Services
 
         public async Task<DashboardDto> GetDashboardDataAsync()
         {
-            return await _httpClient.GetAsync<DashboardDto>("api/dashboard") ?? new DashboardDto();
+            return await _httpClient.GetAsync<DashboardDto>("https://localhost:52041/api/dashboard") ?? new DashboardDto();
         }
     }
 

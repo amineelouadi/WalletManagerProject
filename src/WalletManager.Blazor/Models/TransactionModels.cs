@@ -2,6 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace WalletManager.Blazor.Models
 {
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum TransactionType
     {
         Income = 1,
