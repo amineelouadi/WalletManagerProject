@@ -39,7 +39,7 @@ namespace WalletManager.Blazor.Services
         {
             try
             {
-                return await _httpClient.PutAsync<TransactionDto>($"api/transactions/{id}", transaction);
+                return await _httpClient.PutAsync<TransactionDto>($"https://localhost:52041/api/transactions/{id}", transaction);
             }
             catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.Forbidden)
             {
@@ -52,7 +52,7 @@ namespace WalletManager.Blazor.Services
         {
             try
             {
-                return await _httpClient.DeleteAsync($"api/transactions/{id}");
+                return await _httpClient.DeleteAsync($"https://localhost:52041/api/transactions/{id}");
             }
             catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.Forbidden)
             {
