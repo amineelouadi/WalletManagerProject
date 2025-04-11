@@ -2198,6 +2198,6 @@ C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Blazor\obj
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Blazor\obj\Debug\net8.0\refint\WalletManager.Blazor.dll
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Blazor\obj\Debug\net8.0\WalletManager.Blazor.pdb
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Blazor\obj\Debug\net8.0\ref\WalletManager.Blazor.dll
-C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Blazor\obj\Debug\net8.0\compressed\kzzglxiy96-9gdxqp0ocp.gz
-C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Blazor\obj\Debug\net8.0\compressed\6k22j4alf6-vs5rn2xn0p.gz
-C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Blazor\obj\Debug\net8.0\compressed\ooiai2j61r-dg8spjpna3.gz
+C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Blazor\obj\Debug\net8.0\compressed\kzzglxiy96-qed2u8w93l.gz
+C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Blazor\obj\Debug\net8.0\compressed\6k22j4alf6-q1bs7yl1qy.gz
+C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Blazor\obj\Debug\net8.0\compressed\ooiai2j61r-gw56hb5uys.gz

@@ -150,14 +150,23 @@
                                     </td>
                                     <td>
                                         <div class="btn-group btn-group-sm">
-                                            @if (userRole == "Admin") // Only show buttons for Admins
+                                            @if (userRole == "Admin")
                                             {
+                                                <!-- Boutons Admin -->
                                                 <a href="/transactions/edit/@transaction.Id" class="btn btn-outline-primary">
                                                     <i class="bi bi-pencil"></i>
                                                 </a>
                                                 <button class="btn btn-outline-danger" @onclick="() => OpenDeleteModal(transaction)">
                                                     <i class="bi bi-trash"></i>
                                                 </button>
+                                            }
+                                            else
+                                            {
+                                                <!-- Message pour les non-Admins -->
+                                                <div class="text-muted small" style="padding: 6px 12px;">
+                                                    <i class="bi bi-lock"></i>
+                                                    <span class="ms-1">Non autorisé à modifier</span>
+                                                </div>
                                             }
                                         </div>
                                     </td>
@@ -353,8 +362,8 @@
             .Sum(t => t.Amount);
 
         // Determine if filters are applied
-        isFiltered = filterType >= 0 || 
-                    startDate.Date != DateTime.Now.AddMonths(-1).Date || 
+        isFiltered = filterType >= 0 ||
+                    startDate.Date != DateTime.Now.AddMonths(-1).Date ||
                     endDate.Date != DateTime.Now.Date ||
                     (filterWalletId > 0 && !WalletId.HasValue);
     }
@@ -375,12 +384,12 @@
         filterType = -1;
         startDate = DateTime.Now.AddMonths(-1);
         endDate = DateTime.Now;
-        
+
         if (!WalletId.HasValue)
         {
             filterWalletId = 0;
         }
-        
+
         await LoadTransactions();
         showFilters = false;
     }
