@@ -39,6 +39,8 @@ builder.Services.AddCors(options =>
         });
 });
 
+
+
 // Add Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -72,6 +74,8 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
@@ -86,6 +90,27 @@ app.UseSwaggerUI(c =>
 app.UseHttpsRedirection();
 
 app.UseCors("AllowAllOrigins");
+
+app.Use(async (context, next) =>
+{
+    if (context.Request.Headers.ContainsKey("Authorization"))
+    {
+        var authHeader = context.Request.Headers["Authorization"].ToString();
+        Console.WriteLine($"Authorization header: {authHeader}");
+
+        if (authHeader.StartsWith("Bearer "))
+        {
+            var token = authHeader.Substring("Bearer ".Length).Trim();
+            Console.WriteLine($"Token: {token.Substring(0, Math.Min(20, token.Length))}...");
+        }
+    }
+    else
+    {
+        Console.WriteLine("No Authorization header found");
+    }
+
+    await next();
+});
 
 app.UseAuthentication();
 app.UseAuthorization();

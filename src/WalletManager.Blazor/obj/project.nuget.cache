@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "n6lEGglwzuw=",
+  "dgSpecHash": "46OdUF9F9BE=",
   "success": true,
   "projectFilePath": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\WalletManager.Blazor.csproj",
   "expectedPackageFiles": [
@@ -47,7 +47,7 @@
     "C:\\Users\\melouadi\\.nuget\\packages\\system.io.pipelines\\9.0.4\\system.io.pipelines.9.0.4.nupkg.sha512",
     "C:\\Users\\melouadi\\.nuget\\packages\\system.text.encodings.web\\9.0.4\\system.text.encodings.web.9.0.4.nupkg.sha512",
     "C:\\Users\\melouadi\\.nuget\\packages\\system.text.json\\9.0.4\\system.text.json.9.0.4.nupkg.sha512",
-    "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.14\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.14.nupkg.sha512"
+    "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.15\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.15.nupkg.sha512"
   ],
   "logs": []
 }

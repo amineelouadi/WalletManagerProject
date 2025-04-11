@@ -12,12 +12,12 @@ using WalletManager.Blazor.Services;
 using WalletManager.Blazor.Services.Interfaces;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
-var apiUrl = builder.Configuration["apiUrl"] ?? "http://0.0.0.0:8000";
+var apiUrl = builder.Configuration["apiUrl"] ?? "https://0.0.0.0:8000";
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
 // Server API base address
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("http://0.0.0.0:8000") });
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
 builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
 builder.Configuration.AddInMemoryCollection(new Dictionary<string, string>
@@ -43,7 +43,7 @@ builder.Services.AddScoped<ITransactionService, TransactionService>();
 builder.Services.AddScoped<HttpClientService>();
 
 // Set host URL
-builder.Configuration["hostUrl"] = "http://0.0.0.0:5000";
+builder.Configuration["hostUrl"] = "https://0.0.0.0:5000";
 
 // Set up host
 var host = builder.Build();

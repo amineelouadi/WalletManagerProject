@@ -16,32 +16,32 @@ namespace WalletManager.Blazor.Services
 
         public async Task<List<WalletDto>> GetAllWalletsAsync()
         {
-            return await _httpClient.GetAsync<List<WalletDto>>("api/wallets") ?? new List<WalletDto>();
+            return await _httpClient.GetAsync<List<WalletDto>>("https://localhost:52041/api/wallets") ?? new List<WalletDto>();
         }
 
         public async Task<WalletDto?> GetWalletByIdAsync(int id)
         {
-            return await _httpClient.GetAsync<WalletDto>($"api/wallets/{id}");
+            return await _httpClient.GetAsync<WalletDto>($"https://localhost:52041/api/wallets/{id}");
         }
 
         public async Task<WalletDto?> CreateWalletAsync(CreateWalletDto wallet)
         {
-            return await _httpClient.PostAsync<WalletDto>("api/wallets", wallet);
+            return await _httpClient.PostAsync<WalletDto>("https://localhost:52041/api/wallets", wallet);
         }
 
         public async Task<WalletDto?> UpdateWalletAsync(int id, UpdateWalletDto wallet)
         {
-            return await _httpClient.PutAsync<WalletDto>($"api/wallets/{id}", wallet);
+            return await _httpClient.PutAsync<WalletDto>($"https://localhost:52041/api/wallets/{id}", wallet);
         }
 
         public async Task<bool> DeleteWalletAsync(int id)
         {
-            return await _httpClient.DeleteAsync($"api/wallets/{id}");
+            return await _httpClient.DeleteAsync($"https://localhost:52041/api/wallets/{id}");
         }
 
         public async Task<decimal> GetTotalBalanceAsync()
         {
-            var result = await _httpClient.GetAsync<TotalBalanceResponse>("api/wallets/total-balance");
+            var result = await _httpClient.GetAsync<TotalBalanceResponse>("https://localhost:52041/api/wallets/total-balance");
             return result?.TotalBalance ?? 0;
         }
     }

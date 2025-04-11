@@ -20,12 +20,37 @@ namespace WalletManager.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllWallets()
         {
+            // Debug information
+            Console.WriteLine("Authorization header: " + Request.Headers["Authorization"]);
+
+            if (User.Identity?.IsAuthenticated == true)
+            {
+                Console.WriteLine("User is authenticated");
+                foreach (var claim in User.Claims)
+                {
+                    Console.WriteLine($"Claim: {claim.Type} = {claim.Value}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("User is not authenticated");
+            }
+
             var userId = User.FindFirst("sub")?.Value;
             if (string.IsNullOrEmpty(userId))
             {
-                return Unauthorized();
+                // Try with nameidentifier
+                userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+                Console.WriteLine($"Found nameidentifier claim: {userId}");
+
+                if (string.IsNullOrEmpty(userId))
+                {
+                    Console.WriteLine("User ID not found in claims");
+                    return Unauthorized();
+                }
             }
 
+            Console.WriteLine($"Getting wallets for user: {userId}");
             var wallets = await _walletService.GetAllWalletsAsync(userId);
             return Ok(wallets);
         }
@@ -36,7 +61,13 @@ namespace WalletManager.Api.Controllers
             var userId = User.FindFirst("sub")?.Value;
             if (string.IsNullOrEmpty(userId))
             {
-                return Unauthorized();
+                // Try with nameidentifier
+                userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+
+                if (string.IsNullOrEmpty(userId))
+                {
+                    return Unauthorized();
+                }
             }
 
             var wallet = await _walletService.GetWalletByIdAsync(id, userId);
@@ -51,12 +82,37 @@ namespace WalletManager.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateWallet(CreateWalletDto createWalletDto)
         {
+            // Debug information
+            Console.WriteLine("Authorization header: " + Request.Headers["Authorization"]);
+
+            if (User.Identity?.IsAuthenticated == true)
+            {
+                Console.WriteLine("User is authenticated");
+                foreach (var claim in User.Claims)
+                {
+                    Console.WriteLine($"Claim: {claim.Type} = {claim.Value}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("User is not authenticated");
+            }
+
             var userId = User.FindFirst("sub")?.Value;
             if (string.IsNullOrEmpty(userId))
             {
-                return Unauthorized();
+                // Try with nameidentifier
+                userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+                Console.WriteLine($"Found nameidentifier claim: {userId}");
+
+                if (string.IsNullOrEmpty(userId))
+                {
+                    Console.WriteLine("User ID not found in claims");
+                    return Unauthorized();
+                }
             }
 
+            Console.WriteLine($"Creating wallet for user: {userId}");
             var wallet = await _walletService.CreateWalletAsync(createWalletDto, userId);
             return CreatedAtAction(nameof(GetWalletById), new { id = wallet.Id }, wallet);
         }
@@ -67,7 +123,13 @@ namespace WalletManager.Api.Controllers
             var userId = User.FindFirst("sub")?.Value;
             if (string.IsNullOrEmpty(userId))
             {
-                return Unauthorized();
+                // Try with nameidentifier
+                userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+
+                if (string.IsNullOrEmpty(userId))
+                {
+                    return Unauthorized();
+                }
             }
 
             var wallet = await _walletService.UpdateWalletAsync(id, updateWalletDto, userId);
@@ -85,7 +147,13 @@ namespace WalletManager.Api.Controllers
             var userId = User.FindFirst("sub")?.Value;
             if (string.IsNullOrEmpty(userId))
             {
-                return Unauthorized();
+                // Try with nameidentifier
+                userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+
+                if (string.IsNullOrEmpty(userId))
+                {
+                    return Unauthorized();
+                }
             }
 
             var result = await _walletService.DeleteWalletAsync(id, userId);
@@ -103,7 +171,13 @@ namespace WalletManager.Api.Controllers
             var userId = User.FindFirst("sub")?.Value;
             if (string.IsNullOrEmpty(userId))
             {
-                return Unauthorized();
+                // Try with nameidentifier
+                userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+
+                if (string.IsNullOrEmpty(userId))
+                {
+                    return Unauthorized();
+                }
             }
 
             var totalBalance = await _walletService.GetTotalBalanceAsync(userId);

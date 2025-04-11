@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JMI56cjkmKyBPYv57U1lsaxwzNl4sK27qCauw2bp+JU=",
+  "Hash": "j1Wzdd6QpoAjIu14NSXbDyHLDaaAZqYMZCq2oX2hH5M=",
   "Source": "WalletManager.Blazor",
   "BasePath": "/",
   "Mode": "Root",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "lgiqb7guj6",
-      "Integrity": "Czlhbhq5VCf6sWM3UkCsEsY8jYOYPC82pvL1JlV88M4=",
+      "Fingerprint": "rvy0zf4fol",
+      "Integrity": "abCQjT5qbi6Vdh29wJP9uaEDQf2G9AlFWhjS6nT+BHk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\blazor.boot.json"
@@ -157,11 +157,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "native",
-      "Fingerprint": "rjv86n1vnh",
-      "Integrity": "t6MIg/H8TR8b0Ph4sa9zNbaP//7O4QW5dU60rtK/80k=",
+      "Fingerprint": "zsg7ig48qt",
+      "Integrity": "Ld2mMcflCWWH+RENVpZ2f+7zV+JJowPzvuzSrrHgLhI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.14\\runtimes\\browser-wasm\\native\\dotnet.js"
+      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\dotnet.js"
     },
     {
       "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
@@ -178,11 +178,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fehcz0phpj",
-      "Integrity": "F7Y5eAa+U4kkNMW0u6Qo4sp9JuwcL0fZXIMzgi/54x4=",
+      "Fingerprint": "d8d5fqol7e",
+      "Integrity": "Palst4jLstkzWJtqCPwpSRpPzgHeUF8E2SeXmj1y5yk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.14\\runtimes\\browser-wasm\\native\\dotnet.js.map"
+      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\dotnet.js.map"
     },
     {
       "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.js",
@@ -199,11 +199,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "native",
-      "Fingerprint": "xby11c49lh",
-      "Integrity": "DTUQS6Jc6BNnS7sYYezFfaUKVmQq0/lanhQuJfygH/k=",
+      "Fingerprint": "2bvkbhftx8",
+      "Integrity": "ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.14\\runtimes\\browser-wasm\\native\\dotnet.native.js"
+      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\dotnet.native.js"
     },
     {
       "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
@@ -220,11 +220,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "native",
-      "Fingerprint": "o87b29klf7",
-      "Integrity": "mICh/Z0HwmHNDnkBnBbRTyDkRYBu3OBkhmuy2F7aUSU=",
+      "Fingerprint": "25fgszny1w",
+      "Integrity": "WlcCPeEKcjzreT7MGsFKQGVq8TKP2f2vhVBU9lrBv1s=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.14\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
+      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
     },
     {
       "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js",
@@ -241,11 +241,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "native",
-      "Fingerprint": "91rxfhehz3",
-      "Integrity": "44Vu7OSX4JP89eoc3oTYbYfC5C7USoIWuCw1W9IG6N4=",
+      "Fingerprint": "c4xdz68y56",
+      "Integrity": "FDzrAx2UjG21VHaNZAes6hQGG2S/oq5S2VaFjEBfPgM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.14\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
+      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
     },
     {
       "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
@@ -262,11 +262,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "f0wmdzjb9o",
-      "Integrity": "cSt6BoD3oAqHUXj86Jz1/IqRHdwCEisDpiIRp99iAAo=",
+      "Fingerprint": "a6edwtno5h",
+      "Integrity": "/lK0CyBHJLa1HemluNsXyh3aK3pE2ptYv31wrWkpj2Y=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.14\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
+      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
     },
     {
       "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\emcc-props.json",
@@ -287,7 +287,7 @@
       "Integrity": "EDndcUl06UUgbB5x0DTQqfgwLv4TZo64Ka6aUqdbGTs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.14\\runtimes\\browser-wasm\\native\\src\\emcc-props.json"
+      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\src\\emcc-props.json"
     },
     {
       "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
@@ -308,7 +308,7 @@
       "Integrity": "SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.14\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
+      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
     },
     {
       "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
@@ -329,7 +329,7 @@
       "Integrity": "8fItetYY8kQ0ww6oxwTLiT3oXlBwHKumbeP2pRF4yTc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.14\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
+      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
     },
     {
       "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
@@ -350,7 +350,7 @@
       "Integrity": "L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.14\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+      "OriginalItemSpec": "C:\\Users\\melouadi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.15\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
     },
     {
       "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.wasm",
@@ -4588,8 +4588,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "97zf75nx8u",
-      "Integrity": "C1V7PJDEOsfWt0HjzDgY3e88++puIDKuOlGuPyQtxsc=",
+      "Fingerprint": "0dx22yynh1",
+      "Integrity": "ZP+L16643q0vuptQaxDMtc1dtW28Hh1I4uU4iYN2+vw=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\WalletManager.Blazor.pdb"
@@ -4609,8 +4609,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "7ufqyhq16j",
-      "Integrity": "UQc5fUiwcGeei7Uyl5zVHg+n1HmS23ug1bdGy8E1UEQ=",
+      "Fingerprint": "plpnw4nl9q",
+      "Integrity": "o77Zib1orDinpAwlUOo50WCp8UFGzz1opGEl3PH1SGs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\webcil\\WalletManager.Blazor.wasm"
@@ -4826,7 +4826,7 @@
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Numerics.Vectors.wasm"
     },
     {
-      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\13yru2aot3-rjv86n1vnh.gz",
+      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\13yru2aot3-zsg7ig48qt.gz",
       "SourceId": "WalletManager.Blazor",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\",
@@ -4840,8 +4840,8 @@
       "RelatedAsset": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "1gkzg9qm3p",
-      "Integrity": "v7k0skQqlnC0Otp+mnFZyJF0sZ2RU5B+EKOQxNvrcV8=",
+      "Fingerprint": "cbvz0048gz",
+      "Integrity": "SMkz03p9LKZA6mqcTd5YHQ26yRyrhq0BliNykpDzbcQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js"
@@ -5540,7 +5540,7 @@
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Security.Cryptography.Encoding.wasm"
     },
     {
-      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\6k22j4alf6-97zf75nx8u.gz",
+      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\6k22j4alf6-0dx22yynh1.gz",
       "SourceId": "WalletManager.Blazor",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\",
@@ -5554,8 +5554,8 @@
       "RelatedAsset": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\WalletManager.Blazor.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "wsmsoyserf",
-      "Integrity": "kH2GYZsK8Vfdpb2u3vvGwf7hv3tU4BQRWkjbIwelAcI=",
+      "Fingerprint": "5irn3n4fnt",
+      "Integrity": "/YnPfI8j9LZarSpI3ez/Kx3mfH3WRGig3/TrOLOwPoY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\WalletManager.Blazor.pdb"
@@ -6023,7 +6023,7 @@
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.ConfigurationExtensions.wasm"
     },
     {
-      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\bfgpujidmp-91rxfhehz3.gz",
+      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\bfgpujidmp-c4xdz68y56.gz",
       "SourceId": "WalletManager.Blazor",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\",
@@ -6037,8 +6037,8 @@
       "RelatedAsset": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "lz24f0e6e7",
-      "Integrity": "30hq+q6k0SzlyO3ZzvgrQawSEPz/RfDirAX1GHwCy5g=",
+      "Fingerprint": "wdy2sjbau3",
+      "Integrity": "bO2XP2o0TFzCIkt33SYgTeI5c6Ek6J0iNApcIuvfc4c=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js"
@@ -7367,7 +7367,7 @@
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.IO.wasm"
     },
     {
-      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\kzzglxiy96-7ufqyhq16j.gz",
+      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\kzzglxiy96-plpnw4nl9q.gz",
       "SourceId": "WalletManager.Blazor",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\",
@@ -7381,8 +7381,8 @@
       "RelatedAsset": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\WalletManager.Blazor.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "4shk8tcngc",
-      "Integrity": "/ExjHyCzUr76wXt6GObEEP24o9KXZGFNKZnlCEIyBjY=",
+      "Fingerprint": "kmoqwlvf18",
+      "Integrity": "1LxfSAjN9tKhfCPD1XuruuUylrGvCn78PsqNPDCWN2g=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\WalletManager.Blazor.wasm"
@@ -7493,7 +7493,7 @@
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Web.HttpUtility.wasm"
     },
     {
-      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\lpw3oeiv0d-o87b29klf7.gz",
+      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\lpw3oeiv0d-25fgszny1w.gz",
       "SourceId": "WalletManager.Blazor",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\",
@@ -7507,8 +7507,8 @@
       "RelatedAsset": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ls9vxzokxp",
-      "Integrity": "qw+stNSD8rXd+UE+0ExyCFMI0GoaNeoY2wusqYcBIPw=",
+      "Fingerprint": "owub62cery",
+      "Integrity": "yEDpIX6TQnj4nOK9e8iHRxmFzuCbpbEbW0xnKdNBCmQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm"
@@ -7934,7 +7934,7 @@
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Formats.Asn1.wasm"
     },
     {
-      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\ooiai2j61r-lgiqb7guj6.gz",
+      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\ooiai2j61r-rvy0zf4fol.gz",
       "SourceId": "WalletManager.Blazor",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\",
@@ -7948,8 +7948,8 @@
       "RelatedAsset": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "dbb2p3ny5s",
-      "Integrity": "yToWYcB9FHkg/LBsJxhxnsxbKBxTickvQb1iWtsqId0=",
+      "Fingerprint": "ist0gdu4sa",
+      "Integrity": "LiUKJmI8aXe+SyK6whX9VCiwvVMI8n/Fno2gG/k8xWk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -7997,7 +7997,7 @@
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat"
     },
     {
-      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\q8zgus6mvg-f0wmdzjb9o.gz",
+      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\q8zgus6mvg-a6edwtno5h.gz",
       "SourceId": "WalletManager.Blazor",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\",
@@ -8011,8 +8011,8 @@
       "RelatedAsset": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "wqhjkd31iv",
-      "Integrity": "mDgiZ2hfsfhEqEEKS04gAwKHjxv1+3s0Q9KUuao9rX4=",
+      "Fingerprint": "4jts2wy549",
+      "Integrity": "gKbbbLLWiFBxWgfrmlVDBR4OtyFB6oMu8g2poa5QEy0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
@@ -8753,7 +8753,7 @@
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.wasm"
     },
     {
-      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\vepo0z3gs4-xby11c49lh.gz",
+      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\vepo0z3gs4-2bvkbhftx8.gz",
       "SourceId": "WalletManager.Blazor",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\",
@@ -8767,8 +8767,8 @@
       "RelatedAsset": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "7579ww42z6",
-      "Integrity": "a+wSZu8HlN5ENd2Mdrm/2yLQSQFWRKxgKdvTU1zIgQ0=",
+      "Fingerprint": "ipnana1ljv",
+      "Integrity": "ejq3CGhB5N6au0kG1CsFAVilVmLihL3A7UYVr0bjgl8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.js"
@@ -8942,7 +8942,7 @@
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Text.Encoding.wasm"
     },
     {
-      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\x5222mjnqw-fehcz0phpj.gz",
+      "Identity": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\x5222mjnqw-d8d5fqol7e.gz",
       "SourceId": "WalletManager.Blazor",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\",
@@ -8956,8 +8956,8 @@
       "RelatedAsset": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "m4hwfu4yw3",
-      "Integrity": "toUjyyLxfghHcpxelhDqACuSjGgJF3zijGwF8+hySds=",
+      "Fingerprint": "ud0ncokifg",
+      "Integrity": "sg0AvQWdV8lYjZirRD/TjPwdl0boOVqIdRojC26XomE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map"
@@ -9229,8 +9229,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "BlazorServiceWorker",
       "AssetTraitValue": "ServiceWorkerJs",
-      "Fingerprint": "mxueyh8f5f",
-      "Integrity": "5uXpTOwI8Mepc5CLqK7h/Bc4/cyKR8Yq0zMp7MUrZTA=",
+      "Fingerprint": "2kqzhj85de",
+      "Integrity": "zvETpQX/kwilRUA7nxxj57+XMjKTUNpQknO6ci3vU6k=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "wwwroot\\service-worker.js"
@@ -9250,8 +9250,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "BlazorServiceWorker",
       "AssetTraitValue": "ServiceWorkerManifest",
-      "Fingerprint": "qbzfx79ubh",
-      "Integrity": "alKK1YGACnqsnwfbAlz0BDeEQ0fv1GC58G3tM9Rkw7Y=",
+      "Fingerprint": "mxcq4lcz1b",
+      "Integrity": "BsRSxGBvKqepl4M+CDBQcwhngPUJePDPQg4FPlYswG8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\service-worker\\service-worker-assets.js.build"
@@ -9398,11 +9398,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Czlhbhq5VCf6sWM3UkCsEsY8jYOYPC82pvL1JlV88M4=\""
+          "Value": "\"abCQjT5qbi6Vdh29wJP9uaEDQf2G9AlFWhjS6nT+BHk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 23:18:58 GMT"
+          "Value": "Fri, 11 Apr 2025 02:20:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9412,18 +9412,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Czlhbhq5VCf6sWM3UkCsEsY8jYOYPC82pvL1JlV88M4="
+          "Value": "sha256-abCQjT5qbi6Vdh29wJP9uaEDQf2G9AlFWhjS6nT+BHk="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\ooiai2j61r-lgiqb7guj6.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\ooiai2j61r-rvy0zf4fol.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000106416942"
+          "Quality": "0.000106462259"
         }
       ],
       "ResponseHeaders": [
@@ -9433,15 +9433,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9396"
+          "Value": "9392"
         },
         {
           "Name": "ETag",
-          "Value": "\"yToWYcB9FHkg/LBsJxhxnsxbKBxTickvQb1iWtsqId0=\""
+          "Value": "\"LiUKJmI8aXe+SyK6whX9VCiwvVMI8n/Fno2gG/k8xWk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 23:16:29 GMT"
+          "Value": "Fri, 11 Apr 2025 02:18:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9461,19 +9461,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Czlhbhq5VCf6sWM3UkCsEsY8jYOYPC82pvL1JlV88M4=\""
+          "Value": "W/\"abCQjT5qbi6Vdh29wJP9uaEDQf2G9AlFWhjS6nT+BHk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Czlhbhq5VCf6sWM3UkCsEsY8jYOYPC82pvL1JlV88M4="
+          "Value": "sha256-abCQjT5qbi6Vdh29wJP9uaEDQf2G9AlFWhjS6nT+BHk="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\ooiai2j61r-lgiqb7guj6.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\ooiai2j61r-rvy0zf4fol.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9482,7 +9482,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9396"
+          "Value": "9392"
         },
         {
           "Name": "Content-Type",
@@ -9490,11 +9490,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yToWYcB9FHkg/LBsJxhxnsxbKBxTickvQb1iWtsqId0=\""
+          "Value": "\"LiUKJmI8aXe+SyK6whX9VCiwvVMI8n/Fno2gG/k8xWk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 23:16:29 GMT"
+          "Value": "Fri, 11 Apr 2025 02:18:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9512,7 +9512,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-yToWYcB9FHkg/LBsJxhxnsxbKBxTickvQb1iWtsqId0="
+          "Value": "sha256-LiUKJmI8aXe+SyK6whX9VCiwvVMI8n/Fno2gG/k8xWk="
         }
       ]
     },
@@ -9946,11 +9946,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"t6MIg/H8TR8b0Ph4sa9zNbaP//7O4QW5dU60rtK/80k=\""
+          "Value": "\"Ld2mMcflCWWH+RENVpZ2f+7zV+JJowPzvuzSrrHgLhI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 04:43:10 GMT"
+          "Value": "Sat, 15 Mar 2025 03:02:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9960,18 +9960,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-t6MIg/H8TR8b0Ph4sa9zNbaP//7O4QW5dU60rtK/80k="
+          "Value": "sha256-Ld2mMcflCWWH+RENVpZ2f+7zV+JJowPzvuzSrrHgLhI="
         }
       ]
     },
     {
       "Route": "_framework/dotnet.js",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\13yru2aot3-rjv86n1vnh.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\13yru2aot3-zsg7ig48qt.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000087366766"
+          "Quality": "0.000087374399"
         }
       ],
       "ResponseHeaders": [
@@ -9981,11 +9981,11 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11445"
+          "Value": "11444"
         },
         {
           "Name": "ETag",
-          "Value": "\"v7k0skQqlnC0Otp+mnFZyJF0sZ2RU5B+EKOQxNvrcV8=\""
+          "Value": "\"SMkz03p9LKZA6mqcTd5YHQ26yRyrhq0BliNykpDzbcQ=\""
         },
         {
           "Name": "Last-Modified",
@@ -10009,19 +10009,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"t6MIg/H8TR8b0Ph4sa9zNbaP//7O4QW5dU60rtK/80k=\""
+          "Value": "W/\"Ld2mMcflCWWH+RENVpZ2f+7zV+JJowPzvuzSrrHgLhI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-t6MIg/H8TR8b0Ph4sa9zNbaP//7O4QW5dU60rtK/80k="
+          "Value": "sha256-Ld2mMcflCWWH+RENVpZ2f+7zV+JJowPzvuzSrrHgLhI="
         }
       ]
     },
     {
       "Route": "_framework/dotnet.js.gz",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\13yru2aot3-rjv86n1vnh.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\13yru2aot3-zsg7ig48qt.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10030,7 +10030,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11445"
+          "Value": "11444"
         },
         {
           "Name": "Content-Type",
@@ -10038,7 +10038,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"v7k0skQqlnC0Otp+mnFZyJF0sZ2RU5B+EKOQxNvrcV8=\""
+          "Value": "\"SMkz03p9LKZA6mqcTd5YHQ26yRyrhq0BliNykpDzbcQ=\""
         },
         {
           "Name": "Last-Modified",
@@ -10060,7 +10060,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-v7k0skQqlnC0Otp+mnFZyJF0sZ2RU5B+EKOQxNvrcV8="
+          "Value": "sha256-SMkz03p9LKZA6mqcTd5YHQ26yRyrhq0BliNykpDzbcQ="
         }
       ]
     },
@@ -10083,11 +10083,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"F7Y5eAa+U4kkNMW0u6Qo4sp9JuwcL0fZXIMzgi/54x4=\""
+          "Value": "\"Palst4jLstkzWJtqCPwpSRpPzgHeUF8E2SeXmj1y5yk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 04:43:10 GMT"
+          "Value": "Sat, 15 Mar 2025 03:02:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10097,13 +10097,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-F7Y5eAa+U4kkNMW0u6Qo4sp9JuwcL0fZXIMzgi/54x4="
+          "Value": "sha256-Palst4jLstkzWJtqCPwpSRpPzgHeUF8E2SeXmj1y5yk="
         }
       ]
     },
     {
       "Route": "_framework/dotnet.js.map",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\x5222mjnqw-fehcz0phpj.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\x5222mjnqw-d8d5fqol7e.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -10122,7 +10122,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"toUjyyLxfghHcpxelhDqACuSjGgJF3zijGwF8+hySds=\""
+          "Value": "\"sg0AvQWdV8lYjZirRD/TjPwdl0boOVqIdRojC26XomE=\""
         },
         {
           "Name": "Last-Modified",
@@ -10146,19 +10146,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"F7Y5eAa+U4kkNMW0u6Qo4sp9JuwcL0fZXIMzgi/54x4=\""
+          "Value": "W/\"Palst4jLstkzWJtqCPwpSRpPzgHeUF8E2SeXmj1y5yk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-F7Y5eAa+U4kkNMW0u6Qo4sp9JuwcL0fZXIMzgi/54x4="
+          "Value": "sha256-Palst4jLstkzWJtqCPwpSRpPzgHeUF8E2SeXmj1y5yk="
         }
       ]
     },
     {
       "Route": "_framework/dotnet.js.map.gz",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\x5222mjnqw-fehcz0phpj.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\x5222mjnqw-d8d5fqol7e.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10175,7 +10175,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"toUjyyLxfghHcpxelhDqACuSjGgJF3zijGwF8+hySds=\""
+          "Value": "\"sg0AvQWdV8lYjZirRD/TjPwdl0boOVqIdRojC26XomE=\""
         },
         {
           "Name": "Last-Modified",
@@ -10197,7 +10197,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-toUjyyLxfghHcpxelhDqACuSjGgJF3zijGwF8+hySds="
+          "Value": "sha256-sg0AvQWdV8lYjZirRD/TjPwdl0boOVqIdRojC26XomE="
         }
       ]
     },
@@ -10220,11 +10220,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DTUQS6Jc6BNnS7sYYezFfaUKVmQq0/lanhQuJfygH/k=\""
+          "Value": "\"ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 04:43:42 GMT"
+          "Value": "Sat, 15 Mar 2025 03:02:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10234,13 +10234,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DTUQS6Jc6BNnS7sYYezFfaUKVmQq0/lanhQuJfygH/k="
+          "Value": "sha256-ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY="
         }
       ]
     },
     {
       "Route": "_framework/dotnet.native.js",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\vepo0z3gs4-xby11c49lh.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\vepo0z3gs4-2bvkbhftx8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -10259,7 +10259,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"a+wSZu8HlN5ENd2Mdrm/2yLQSQFWRKxgKdvTU1zIgQ0=\""
+          "Value": "\"ejq3CGhB5N6au0kG1CsFAVilVmLihL3A7UYVr0bjgl8=\""
         },
         {
           "Name": "Last-Modified",
@@ -10283,19 +10283,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"DTUQS6Jc6BNnS7sYYezFfaUKVmQq0/lanhQuJfygH/k=\""
+          "Value": "W/\"ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DTUQS6Jc6BNnS7sYYezFfaUKVmQq0/lanhQuJfygH/k="
+          "Value": "sha256-ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY="
         }
       ]
     },
     {
       "Route": "_framework/dotnet.native.js.gz",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\vepo0z3gs4-xby11c49lh.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\vepo0z3gs4-2bvkbhftx8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10312,7 +10312,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"a+wSZu8HlN5ENd2Mdrm/2yLQSQFWRKxgKdvTU1zIgQ0=\""
+          "Value": "\"ejq3CGhB5N6au0kG1CsFAVilVmLihL3A7UYVr0bjgl8=\""
         },
         {
           "Name": "Last-Modified",
@@ -10334,7 +10334,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-a+wSZu8HlN5ENd2Mdrm/2yLQSQFWRKxgKdvTU1zIgQ0="
+          "Value": "sha256-ejq3CGhB5N6au0kG1CsFAVilVmLihL3A7UYVr0bjgl8="
         }
       ]
     },
@@ -10357,11 +10357,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mICh/Z0HwmHNDnkBnBbRTyDkRYBu3OBkhmuy2F7aUSU=\""
+          "Value": "\"WlcCPeEKcjzreT7MGsFKQGVq8TKP2f2vhVBU9lrBv1s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 04:43:42 GMT"
+          "Value": "Sat, 15 Mar 2025 03:02:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10371,18 +10371,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mICh/Z0HwmHNDnkBnBbRTyDkRYBu3OBkhmuy2F7aUSU="
+          "Value": "sha256-WlcCPeEKcjzreT7MGsFKQGVq8TKP2f2vhVBU9lrBv1s="
         }
       ]
     },
     {
       "Route": "_framework/dotnet.native.wasm",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\lpw3oeiv0d-o87b29klf7.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\lpw3oeiv0d-25fgszny1w.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000000866979"
+          "Quality": "0.000000866735"
         }
       ],
       "ResponseHeaders": [
@@ -10392,11 +10392,11 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1153430"
+          "Value": "1153754"
         },
         {
           "Name": "ETag",
-          "Value": "\"qw+stNSD8rXd+UE+0ExyCFMI0GoaNeoY2wusqYcBIPw=\""
+          "Value": "\"yEDpIX6TQnj4nOK9e8iHRxmFzuCbpbEbW0xnKdNBCmQ=\""
         },
         {
           "Name": "Last-Modified",
@@ -10420,19 +10420,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"mICh/Z0HwmHNDnkBnBbRTyDkRYBu3OBkhmuy2F7aUSU=\""
+          "Value": "W/\"WlcCPeEKcjzreT7MGsFKQGVq8TKP2f2vhVBU9lrBv1s=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mICh/Z0HwmHNDnkBnBbRTyDkRYBu3OBkhmuy2F7aUSU="
+          "Value": "sha256-WlcCPeEKcjzreT7MGsFKQGVq8TKP2f2vhVBU9lrBv1s="
         }
       ]
     },
     {
       "Route": "_framework/dotnet.native.wasm.gz",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\lpw3oeiv0d-o87b29klf7.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\lpw3oeiv0d-25fgszny1w.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10441,7 +10441,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1153430"
+          "Value": "1153754"
         },
         {
           "Name": "Content-Type",
@@ -10449,7 +10449,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qw+stNSD8rXd+UE+0ExyCFMI0GoaNeoY2wusqYcBIPw=\""
+          "Value": "\"yEDpIX6TQnj4nOK9e8iHRxmFzuCbpbEbW0xnKdNBCmQ=\""
         },
         {
           "Name": "Last-Modified",
@@ -10471,7 +10471,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qw+stNSD8rXd+UE+0ExyCFMI0GoaNeoY2wusqYcBIPw="
+          "Value": "sha256-yEDpIX6TQnj4nOK9e8iHRxmFzuCbpbEbW0xnKdNBCmQ="
         }
       ]
     },
@@ -10494,11 +10494,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"44Vu7OSX4JP89eoc3oTYbYfC5C7USoIWuCw1W9IG6N4=\""
+          "Value": "\"FDzrAx2UjG21VHaNZAes6hQGG2S/oq5S2VaFjEBfPgM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 04:43:18 GMT"
+          "Value": "Sat, 15 Mar 2025 03:02:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10508,18 +10508,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-44Vu7OSX4JP89eoc3oTYbYfC5C7USoIWuCw1W9IG6N4="
+          "Value": "sha256-FDzrAx2UjG21VHaNZAes6hQGG2S/oq5S2VaFjEBfPgM="
         }
       ]
     },
     {
       "Route": "_framework/dotnet.runtime.js",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\bfgpujidmp-91rxfhehz3.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\bfgpujidmp-c4xdz68y56.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000015396459"
+          "Quality": "0.000015394563"
         }
       ],
       "ResponseHeaders": [
@@ -10529,11 +10529,11 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "64949"
+          "Value": "64957"
         },
         {
           "Name": "ETag",
-          "Value": "\"30hq+q6k0SzlyO3ZzvgrQawSEPz/RfDirAX1GHwCy5g=\""
+          "Value": "\"bO2XP2o0TFzCIkt33SYgTeI5c6Ek6J0iNApcIuvfc4c=\""
         },
         {
           "Name": "Last-Modified",
@@ -10557,19 +10557,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"44Vu7OSX4JP89eoc3oTYbYfC5C7USoIWuCw1W9IG6N4=\""
+          "Value": "W/\"FDzrAx2UjG21VHaNZAes6hQGG2S/oq5S2VaFjEBfPgM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-44Vu7OSX4JP89eoc3oTYbYfC5C7USoIWuCw1W9IG6N4="
+          "Value": "sha256-FDzrAx2UjG21VHaNZAes6hQGG2S/oq5S2VaFjEBfPgM="
         }
       ]
     },
     {
       "Route": "_framework/dotnet.runtime.js.gz",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\bfgpujidmp-91rxfhehz3.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\bfgpujidmp-c4xdz68y56.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10578,7 +10578,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "64949"
+          "Value": "64957"
         },
         {
           "Name": "Content-Type",
@@ -10586,7 +10586,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"30hq+q6k0SzlyO3ZzvgrQawSEPz/RfDirAX1GHwCy5g=\""
+          "Value": "\"bO2XP2o0TFzCIkt33SYgTeI5c6Ek6J0iNApcIuvfc4c=\""
         },
         {
           "Name": "Last-Modified",
@@ -10608,7 +10608,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-30hq+q6k0SzlyO3ZzvgrQawSEPz/RfDirAX1GHwCy5g="
+          "Value": "sha256-bO2XP2o0TFzCIkt33SYgTeI5c6Ek6J0iNApcIuvfc4c="
         }
       ]
     },
@@ -10631,11 +10631,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cSt6BoD3oAqHUXj86Jz1/IqRHdwCEisDpiIRp99iAAo=\""
+          "Value": "\"/lK0CyBHJLa1HemluNsXyh3aK3pE2ptYv31wrWkpj2Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 04:43:18 GMT"
+          "Value": "Sat, 15 Mar 2025 03:02:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10645,18 +10645,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cSt6BoD3oAqHUXj86Jz1/IqRHdwCEisDpiIRp99iAAo="
+          "Value": "sha256-/lK0CyBHJLa1HemluNsXyh3aK3pE2ptYv31wrWkpj2Y="
         }
       ]
     },
     {
       "Route": "_framework/dotnet.runtime.js.map",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\q8zgus6mvg-f0wmdzjb9o.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\q8zgus6mvg-a6edwtno5h.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000009973172"
+          "Quality": "0.000009973371"
         }
       ],
       "ResponseHeaders": [
@@ -10666,11 +10666,11 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "100268"
+          "Value": "100266"
         },
         {
           "Name": "ETag",
-          "Value": "\"mDgiZ2hfsfhEqEEKS04gAwKHjxv1+3s0Q9KUuao9rX4=\""
+          "Value": "\"gKbbbLLWiFBxWgfrmlVDBR4OtyFB6oMu8g2poa5QEy0=\""
         },
         {
           "Name": "Last-Modified",
@@ -10694,19 +10694,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"cSt6BoD3oAqHUXj86Jz1/IqRHdwCEisDpiIRp99iAAo=\""
+          "Value": "W/\"/lK0CyBHJLa1HemluNsXyh3aK3pE2ptYv31wrWkpj2Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cSt6BoD3oAqHUXj86Jz1/IqRHdwCEisDpiIRp99iAAo="
+          "Value": "sha256-/lK0CyBHJLa1HemluNsXyh3aK3pE2ptYv31wrWkpj2Y="
         }
       ]
     },
     {
       "Route": "_framework/dotnet.runtime.js.map.gz",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\q8zgus6mvg-f0wmdzjb9o.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\q8zgus6mvg-a6edwtno5h.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10715,7 +10715,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "100268"
+          "Value": "100266"
         },
         {
           "Name": "Content-Type",
@@ -10723,7 +10723,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mDgiZ2hfsfhEqEEKS04gAwKHjxv1+3s0Q9KUuao9rX4=\""
+          "Value": "\"gKbbbLLWiFBxWgfrmlVDBR4OtyFB6oMu8g2poa5QEy0=\""
         },
         {
           "Name": "Last-Modified",
@@ -10745,7 +10745,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mDgiZ2hfsfhEqEEKS04gAwKHjxv1+3s0Q9KUuao9rX4="
+          "Value": "sha256-gKbbbLLWiFBxWgfrmlVDBR4OtyFB6oMu8g2poa5QEy0="
         }
       ]
     },
@@ -10772,7 +10772,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 04:42:38 GMT"
+          "Value": "Sat, 15 Mar 2025 03:01:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -38845,7 +38845,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "101656"
+          "Value": "102080"
         },
         {
           "Name": "Content-Type",
@@ -38853,11 +38853,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"C1V7PJDEOsfWt0HjzDgY3e88++puIDKuOlGuPyQtxsc=\""
+          "Value": "\"ZP+L16643q0vuptQaxDMtc1dtW28Hh1I4uU4iYN2+vw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 23:18:58 GMT"
+          "Value": "Fri, 11 Apr 2025 02:20:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -38867,18 +38867,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-C1V7PJDEOsfWt0HjzDgY3e88++puIDKuOlGuPyQtxsc="
+          "Value": "sha256-ZP+L16643q0vuptQaxDMtc1dtW28Hh1I4uU4iYN2+vw="
         }
       ]
     },
     {
       "Route": "_framework/WalletManager.Blazor.pdb",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\6k22j4alf6-97zf75nx8u.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\6k22j4alf6-0dx22yynh1.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000013571836"
+          "Quality": "0.000013512418"
         }
       ],
       "ResponseHeaders": [
@@ -38888,15 +38888,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "73681"
+          "Value": "74005"
         },
         {
           "Name": "ETag",
-          "Value": "\"kH2GYZsK8Vfdpb2u3vvGwf7hv3tU4BQRWkjbIwelAcI=\""
+          "Value": "\"/YnPfI8j9LZarSpI3ez/Kx3mfH3WRGig3/TrOLOwPoY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 23:16:29 GMT"
+          "Value": "Fri, 11 Apr 2025 02:18:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -38916,19 +38916,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"C1V7PJDEOsfWt0HjzDgY3e88++puIDKuOlGuPyQtxsc=\""
+          "Value": "W/\"ZP+L16643q0vuptQaxDMtc1dtW28Hh1I4uU4iYN2+vw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-C1V7PJDEOsfWt0HjzDgY3e88++puIDKuOlGuPyQtxsc="
+          "Value": "sha256-ZP+L16643q0vuptQaxDMtc1dtW28Hh1I4uU4iYN2+vw="
         }
       ]
     },
     {
       "Route": "_framework/WalletManager.Blazor.pdb.gz",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\6k22j4alf6-97zf75nx8u.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\6k22j4alf6-0dx22yynh1.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -38937,7 +38937,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "73681"
+          "Value": "74005"
         },
         {
           "Name": "Content-Type",
@@ -38945,11 +38945,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kH2GYZsK8Vfdpb2u3vvGwf7hv3tU4BQRWkjbIwelAcI=\""
+          "Value": "\"/YnPfI8j9LZarSpI3ez/Kx3mfH3WRGig3/TrOLOwPoY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 23:16:29 GMT"
+          "Value": "Fri, 11 Apr 2025 02:18:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -38967,7 +38967,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kH2GYZsK8Vfdpb2u3vvGwf7hv3tU4BQRWkjbIwelAcI="
+          "Value": "sha256-/YnPfI8j9LZarSpI3ez/Kx3mfH3WRGig3/TrOLOwPoY="
         }
       ]
     },
@@ -38982,7 +38982,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "187669"
+          "Value": "188181"
         },
         {
           "Name": "Content-Type",
@@ -38990,11 +38990,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UQc5fUiwcGeei7Uyl5zVHg+n1HmS23ug1bdGy8E1UEQ=\""
+          "Value": "\"o77Zib1orDinpAwlUOo50WCp8UFGzz1opGEl3PH1SGs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 23:18:58 GMT"
+          "Value": "Fri, 11 Apr 2025 02:20:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39004,18 +39004,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UQc5fUiwcGeei7Uyl5zVHg+n1HmS23ug1bdGy8E1UEQ="
+          "Value": "sha256-o77Zib1orDinpAwlUOo50WCp8UFGzz1opGEl3PH1SGs="
         }
       ]
     },
     {
       "Route": "_framework/WalletManager.Blazor.wasm",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\kzzglxiy96-7ufqyhq16j.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\kzzglxiy96-plpnw4nl9q.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000017939794"
+          "Quality": "0.000017875337"
         }
       ],
       "ResponseHeaders": [
@@ -39025,15 +39025,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "55741"
+          "Value": "55942"
         },
         {
           "Name": "ETag",
-          "Value": "\"/ExjHyCzUr76wXt6GObEEP24o9KXZGFNKZnlCEIyBjY=\""
+          "Value": "\"1LxfSAjN9tKhfCPD1XuruuUylrGvCn78PsqNPDCWN2g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 23:16:29 GMT"
+          "Value": "Fri, 11 Apr 2025 02:18:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39053,19 +39053,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"UQc5fUiwcGeei7Uyl5zVHg+n1HmS23ug1bdGy8E1UEQ=\""
+          "Value": "W/\"o77Zib1orDinpAwlUOo50WCp8UFGzz1opGEl3PH1SGs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UQc5fUiwcGeei7Uyl5zVHg+n1HmS23ug1bdGy8E1UEQ="
+          "Value": "sha256-o77Zib1orDinpAwlUOo50WCp8UFGzz1opGEl3PH1SGs="
         }
       ]
     },
     {
       "Route": "_framework/WalletManager.Blazor.wasm.gz",
-      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\kzzglxiy96-7ufqyhq16j.gz",
+      "AssetFile": "C:\\Users\\melouadi\\Desktop\\WalletMaster\\WalletMaster\\src\\WalletManager.Blazor\\obj\\Debug\\net8.0\\compressed\\kzzglxiy96-plpnw4nl9q.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -39074,7 +39074,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "55741"
+          "Value": "55942"
         },
         {
           "Name": "Content-Type",
@@ -39082,11 +39082,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/ExjHyCzUr76wXt6GObEEP24o9KXZGFNKZnlCEIyBjY=\""
+          "Value": "\"1LxfSAjN9tKhfCPD1XuruuUylrGvCn78PsqNPDCWN2g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 23:16:29 GMT"
+          "Value": "Fri, 11 Apr 2025 02:18:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39104,7 +39104,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/ExjHyCzUr76wXt6GObEEP24o9KXZGFNKZnlCEIyBjY="
+          "Value": "sha256-1LxfSAjN9tKhfCPD1XuruuUylrGvCn78PsqNPDCWN2g="
         }
       ]
     },
@@ -39674,7 +39674,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5uXpTOwI8Mepc5CLqK7h/Bc4/cyKR8Yq0zMp7MUrZTA=\""
+          "Value": "\"zvETpQX/kwilRUA7nxxj57+XMjKTUNpQknO6ci3vU6k=\""
         },
         {
           "Name": "Last-Modified",
@@ -39688,7 +39688,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5uXpTOwI8Mepc5CLqK7h/Bc4/cyKR8Yq0zMp7MUrZTA="
+          "Value": "sha256-zvETpQX/kwilRUA7nxxj57+XMjKTUNpQknO6ci3vU6k="
         }
       ]
     },
@@ -39711,11 +39711,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"alKK1YGACnqsnwfbAlz0BDeEQ0fv1GC58G3tM9Rkw7Y=\""
+          "Value": "\"BsRSxGBvKqepl4M+CDBQcwhngPUJePDPQg4FPlYswG8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 23:18:58 GMT"
+          "Value": "Fri, 11 Apr 2025 02:20:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39725,7 +39725,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-alKK1YGACnqsnwfbAlz0BDeEQ0fv1GC58G3tM9Rkw7Y="
+          "Value": "sha256-BsRSxGBvKqepl4M+CDBQcwhngPUJePDPQg4FPlYswG8="
         }
       ]
     }

@@ -28,3 +28,4 @@ C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Applicatio
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Application\obj\Debug\net8.0\refint\WalletManager.Application.dll
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Application\obj\Debug\net8.0\WalletManager.Application.pdb
 C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Application\obj\Debug\net8.0\ref\WalletManager.Application.dll
+C:\Users\melouadi\Desktop\WalletMaster\WalletMaster\src\WalletManager.Application\obj\Debug\net8.0\WalletManager.Application.sourcelink.json

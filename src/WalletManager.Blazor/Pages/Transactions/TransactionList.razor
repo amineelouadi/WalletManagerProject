@@ -258,13 +258,25 @@
             else
             {
                 transactions = await TransactionService.GetAllTransactionsAsync();
+
+                // Debug output
+                Console.WriteLine($"Fetched {transactions?.Count} transactions");
+                if (transactions == null)
+                {
+                    Console.WriteLine("Transactions list is null");
+                }
             }
 
             FilterTransactions();
         }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading transactions: {ex}");
+        }
         finally
         {
             isLoading = false;
+            StateHasChanged();
         }
     }
 
